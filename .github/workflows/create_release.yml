@@ -50,7 +50,7 @@ jobs:
           ref: master
       - name: Update .toc
         run: |
-          sed -i "s/## Version: */## Version: ${{ env.CURRENT_VERSION }}/g" Maps.toc
+          sed -i "s/## Version: .*/## Version: ${{ env.CURRENT_VERSION }}/" Maps.toc
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
