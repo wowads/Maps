@@ -88,4 +88,4 @@ jobs:
           release_name: Release ${{ env.CURRENT_VERSION }}
           body: ${{ steps.changelog_reader.outputs.changelog }}
           draft: false
-          prerelease: ${{ contains('-alpha', env.RELEASE_VERSION) || contains('-beta', env.RELEASE_VERSION) }}
+          prerelease: ${{ contains('-alpha', env.CURRENT_VERSION) || contains('-beta', env.CURRENT_VERSION) }}
