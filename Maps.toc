@@ -2,7 +2,7 @@
 ## Title: WoWMua: |cff69ccf0Maps|r
 ## Notes: Maps Library
 ## Author: Jan Galek (WarfaceZ)
-## Version: 0.1.0
+## Version: v0.0.31-alpha0.1.0
 ## X-Category: Library
 
 Maps.lua
