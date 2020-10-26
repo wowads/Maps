@@ -37,17 +37,23 @@ jobs:
           echo ${{ github.event.head }}
 
       # Runs a single command using the runners shell
+#      - name: Update changelog
+#        uses: thomaseizinger/keep-a-changelog-new-release@v1
+#        with:
+#          version:  ${{ env.RELEASE_VERSION }}
+
       - name: Update changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@v1
+        uses: scottbrenner/generate-changelog-action@master
+        id: Changelog
         with:
-          version:  ${{ env.RELEASE_VERSION }}
+          REPO: ${{ github.repository }}
 
       - name: Commit changelog and Update version in .toc
         run: |
-          git add CHANGELOG.md
-          git add Maps.toc
-          git commit -m "Prepare release ${{ env.RELEASE_VERSION }}"
-          git push origin
+#          git add CHANGELOG.md
+#          git add Maps.toc
+#          git commit -m "Prepare release ${{ env.RELEASE_VERSION }}"
+#          git push origin
           git push release/${{ env.RELEASE_VERSION }}
 
       - name: Create pull request into master
@@ -86,6 +92,7 @@ jobs:
         with:
           tag_name: ${{ env.RELEASE_VERSION }}
           release_name: ${{ env.RELEASE_VERSION }}
-          body: ${{ steps.extract_release_notes.outputs.release_notes }}
+          body: ${{ steps.Changelog.outputs.changelog }}
+#          body: ${{ steps.extract_release_notes.outputs.release_notes }}
           draft: false
           prerelease: ${{ contains('-alpha', env.RELEASE_VERSION) || contains('-beta', env.RELEASE_VERSION) }}
