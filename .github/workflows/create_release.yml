@@ -48,10 +48,10 @@ jobs:
           git push origin release/${{ env.RELEASE_VERSION }}
 
       - name: Update changelog
-        uses: fabernovel/github-changelog-generator-action@v1
+        uses: heinrichreimer/github-changelog-generator-action@v2.1.1
         id: Changelog
         with:
-          options: --token ${{ github.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push changelog
         run: |
