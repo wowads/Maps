@@ -22,11 +22,11 @@ jobs:
           pullRequests: true
           prWoLabels: true
           unreleased: true
-          breakingLabel: 'Changed'
+          breakingLabel: '### Changed'
           breakingLabels: 'backwards-incompatible,breaking,changed,Changed'
-          enhancementLabel: 'Added'
+          enhancementLabel: '### Added'
           enhancementLabels: 'enhancement,Enhancement,added,Added'
-          bugLabel: 'Fixed'
+          bugsLabel: '### Fixed'
           bugLabels: 'bug,Bug,fixed,Fixed'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
