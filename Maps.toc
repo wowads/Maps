@@ -1,0 +1,20 @@
+## Interface: 90001
+## Title: WoWMua: |cff69ccf0Maps|r
+## Notes: Maps Library
+## Author: Jan Galek (WarfaceZ)
+## Version: 0.1.0
+## X-Category: Library
+
+Maps.lua
+DB\Types.lua
+DB\Azeroth.lua
+DB\Draenor.lua
+DB\Dungeons.lua
+DB\EasternKingdoms.lua
+DB\Kalimdor.lua
+DB\Northrend.lua
+DB\Outland.lua
+DB\Pandaria.lua
+DB\Raids.lua
+DB\Shadowlands.lua
+DB\TheMaelstrom.lua
