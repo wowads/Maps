@@ -4,6 +4,7 @@
 
 **Fixed bugs:**
 
+- Fix [\#12](https://github.com/wowmua/Maps/pull/12)
 - Fix [\#11](https://github.com/wowmua/Maps/pull/11)
 - Fix [\#10](https://github.com/wowmua/Maps/pull/10)
 - Fix [\#9](https://github.com/wowmua/Maps/pull/9)
