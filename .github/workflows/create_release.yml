@@ -10,31 +10,6 @@ on:
       - 'v*'
 
 jobs:
-  changelog:
-    name: Update Changelog
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get version from tag
-        env:
-          GITHUB_REF: $
-        run: echo "CURRENT_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          ref: master
-      - name: Update Changelog
-        uses: heinrichreimer/github-changelog-generator-action@v2.1.1
-        with:
-          token: ${{ secrets.WIKI_TOKEN }}
-          issues: true
-          issuesWoLabels: true
-          pullRequests: true
-          prWoLabels: true
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
-          file_pattern: CHANGELOG.md
-
   update_package:
     name: Update package version in .toc
     runs-on: ubuntu-latest
@@ -53,13 +28,45 @@ jobs:
           sed -i "s/## Version: .*/## Version: ${{ env.CURRENT_VERSION }}/" Maps.toc
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
+          commit_message: Update version in toc for tag ${{ env.CURRENT_VERSION }}
           file_pattern: Maps.toc
+
+  changelog:
+    name: Update Changelog
+    runs-on: ubuntu-latest
+    needs: update_package
+    steps:
+      - name: Get version from tag
+        env:
+          GITHUB_REF: $
+        run: echo "CURRENT_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Update Changelog
+        uses: heinrichreimer/github-changelog-generator-action@v2.1.1
+        with:
+          token: ${{ secrets.WIKI_TOKEN }}
+          issues: true
+          issuesWoLabels: true
+          pullRequests: true
+          prWoLabels: true
+          breakingLabel: 'Changed'
+          breakingLabels: 'backwards-incompatible,breaking,changed,Changed'
+          enhancementLabel: 'Added'
+          enhancementLabels: 'enhancement,Enhancement,added,Added'
+          bugLabel: 'Fixed'
+          bugLabels: 'bug,Bug,fixed,Fixed'
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
+          file_pattern: CHANGELOG.md
 
   release_notes:
     name: Create Release Notes
     runs-on: ubuntu-latest
-    needs: update_package
+    needs: changelog
     steps:
       - name: Get version from tag
         env:
