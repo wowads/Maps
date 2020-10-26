@@ -86,6 +86,6 @@ jobs:
         with:
           tag_name: ${{ env.CURRENT_VERSION }}
           release_name: Release ${{ env.CURRENT_VERSION }}
-          body: ${{ steps.changelog_reader.outputs.changelog }}
-          draft: false
-          prerelease: ${{ contains('-alpha', env.CURRENT_VERSION) || contains('-beta', env.CURRENT_VERSION) }}
+          body: ${{ steps.changelog_reader.outputs.changes }}
+          draft: ${{ contains('-alpha', env.CURRENT_VERSION) }}
+          prerelease: ${{ contains('-beta', env.CURRENT_VERSION) }}
