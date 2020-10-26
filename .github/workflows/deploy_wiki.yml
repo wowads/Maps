@@ -23,5 +23,5 @@ jobs:
           WIKI_DIR: .github/wiki/
           GH_TOKEN: ${{ secrets.WIKI_TOKEN }}
           GH_MAIL: ${{ secrets.OWNER_EMAIL }}
-          GH_NAME: ${{ github.repository_owner }}
+          GH_NAME: ${{ github.REPOSITORY_OWNER }}
           EXCLUDED_FILES: "a/ b.md"
