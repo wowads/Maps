@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.0.30-alpha](https://github.com/wowmua/Maps/tree/v0.0.30-alpha) (2020-10-26)
+
 ## [v0.0.29-alpha](https://github.com/wowmua/Maps/tree/v0.0.29-alpha) (2020-10-26)
 
 ## [v0.0.28-alpha](https://github.com/wowmua/Maps/tree/v0.0.28-alpha) (2020-10-26)
