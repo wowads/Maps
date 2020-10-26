@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
+## [v0.0.33](https://github.com/wowmua/Maps/tree/v0.0.33) (2020-10-26)
 
 **Merged pull requests:**
 
