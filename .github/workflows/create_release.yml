@@ -1,0 +1,70 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      versionName:
+        required: true
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  changelog:
+    name: Update Changelog
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get version from tag
+        env:
+          GITHUB_REF: $
+        run: echo "CURRENT_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Update Changelog
+        uses: heinrichreimer/github-changelog-generator-action@v2.1.1
+        with:
+          token: ${{ secrets.WIKI_TOKEN }}
+          issues: true
+          issuesWoLabels: true
+          pullRequests: true
+          prWoLabels: true
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
+          file_pattern: CHANGELOG.md
+
+  release_notes:
+    name: Create Release Notes
+    runs-on: ubuntu-latest
+    needs: changelog
+    steps:
+      - name: Get version from tag
+        env:
+          GITHUB_REF: $
+        run: echo "CURRENT_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Get Changelog Entry
+        id: changelog_reader
+        uses: mindsers/changelog-reader-action@v1
+        with:
+          version: ${{ env.CURRENT_VERSION }}
+          path: ./CHANGELOG.md
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.WIKI_TOKEN }}
+        with:
+          tag_name: ${{ env.CURRENT_VERSION }}
+          release_name: Release ${{ env.CURRENT_VERSION }}
+          body: ${{ steps.changelog_reader.outputs.changelog }}
+          draft: false
+          prerelease: ${{ contains('-alpha', env.RELEASE_VERSION) || contains('-beta', env.RELEASE_VERSION) }}
