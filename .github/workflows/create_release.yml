@@ -55,6 +55,7 @@ jobs:
       - name: Fix headers in changelog
         run: |
           sed -Ei "s/###(.+)/### \1/" CHANGELOG.md
+          sed -Ei "s/[*]{2}(.+):[*]{2}/### \1/" CHANGELOG.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
