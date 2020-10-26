@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
+
+**Merged pull requests:**
+
+- Switch getter release notes [\#7](https://github.com/wowmua/Maps/pull/7)
+
 ## [v0.0.34-alpha](https://github.com/wowmua/Maps/tree/v0.0.34-alpha) (2020-10-26)
 
 **Merged pull requests:**
