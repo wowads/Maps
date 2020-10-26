@@ -9,13 +9,13 @@
 - Fix [\#10](https://github.com/wowmua/Maps/pull/10)
 - Fix [\#9](https://github.com/wowmua/Maps/pull/9)
 
-###Fixed
+### Fixed
 
 - Fix [\#8](https://github.com/wowmua/Maps/pull/8)
 
 ## [v0.0.35-alpha](https://github.com/wowmua/Maps/tree/v0.0.35-alpha) (2020-10-26)
 
-###Changed
+### Changed
 
 - Switch getter release notes [\#7](https://github.com/wowmua/Maps/pull/7)
 
