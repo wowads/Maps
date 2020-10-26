@@ -51,7 +51,7 @@ jobs:
         run: |
           git add CHANGELOG.md
           git commit -m "Update Changelog for ${{ env.RELEASE_VERSION }}"
-          git push origin release/${{ env.RELEASE_VERSION }}
+          git push "https://$CI_USER:$CI_TOKEN@github.com/$GITHUB_REPOSITORY.git" release/${{ env.RELEASE_VERSION }}
           echo "::set-output name=commit::$(git rev-parse HEAD)"
       - name: Extract release notes
         id: extract_release_notes
