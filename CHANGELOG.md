@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
+
+**Merged pull requests:**
+
+- Fix expresion [\#4](https://github.com/wowmua/Maps/pull/4)
+
 ## [v0.0.31-alpha](https://github.com/wowmua/Maps/tree/v0.0.31-alpha) (2020-10-26)
 
 ## [v0.0.30-alpha](https://github.com/wowmua/Maps/tree/v0.0.30-alpha) (2020-10-26)
