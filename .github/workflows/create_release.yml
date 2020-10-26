@@ -52,11 +52,11 @@ jobs:
           issuesWoLabels: true
           pullRequests: true
           prWoLabels: true
-          breakingLabel: 'Changed'
+          breakingLabel: '## Changed'
           breakingLabels: 'backwards-incompatible,breaking,changed,Changed'
-          enhancementLabel: 'Added'
+          enhancementLabel: '## Added'
           enhancementLabels: 'enhancement,Enhancement,added,Added'
-          bugLabel: 'Fixed'
+          bugLabel: '## Fixed'
           bugLabels: 'bug,Bug,fixed,Fixed'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
