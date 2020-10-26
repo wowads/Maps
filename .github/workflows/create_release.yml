@@ -28,7 +28,8 @@ jobs:
 
       - name: Test
         run: |
-          OBJDUMP(${{github.event}})
+          echo ${{ github.event.ref }}
+          OBJDUMP(${{ github.event }})
 
       # Runs a single command using the runners shell
 #      - name: Update changelog
