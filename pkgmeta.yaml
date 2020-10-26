@@ -1,0 +1,9 @@
+license-output: LICENSE
+
+tools-used:
+  - IntelliJ IDEA Community
+  - EmmaLua
+  - Lua 5.3
+  - WoWMua - Lua SDK
+  - Brave (browser)
+  - Git
