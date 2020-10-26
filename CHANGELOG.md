@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
+
+**Merged pull requests:**
+
+- Fixed prerelease condition [\#5](https://github.com/wowmua/Maps/pull/5)
+
 ## [v0.0.32](https://github.com/wowmua/Maps/tree/v0.0.32) (2020-10-26)
 
 **Merged pull requests:**
