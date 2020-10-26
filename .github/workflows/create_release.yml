@@ -35,6 +35,26 @@ jobs:
           commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
           file_pattern: CHANGELOG.md
 
+  update_package:
+    name: Update package version in .toc
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get version from tag
+        env:
+          GITHUB_REF: $
+        run: echo "CURRENT_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Update .toc
+        run: |
+          sed -i "s/## Version: */## Version: ${{ env.CURRENT_VERSION }}/g" Maps.toc
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
+          file_pattern: Maps.toc
+
   release_notes:
     name: Create Release Notes
     runs-on: ubuntu-latest
