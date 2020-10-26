@@ -48,8 +48,8 @@ jobs:
         with:
           REPO: ${{ github.repository }}
 
-      - name: Commit changelog and Update version in .toc
-        run: git push origin release/${{ env.RELEASE_VERSION }}
+#      - name: Commit changelog and Update version in .toc
+#        run: git push origin release/${{ env.RELEASE_VERSION }}
 #        run: |
 #          git add CHANGELOG.md
 #          git add Maps.toc
