@@ -72,21 +72,39 @@ jobs:
 #          git push origin
 #          git push release/${{ env.RELEASE_VERSION }}
 
+      - name: Extract release notes
+        id: extract_release_notes
+        uses: ffurrer2/extract-release-notes@v1
+        with:
+          changelog_file: CHANGELOG.md
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.RELEASE_VERSION }}
+          release_name: ${{ env.RELEASE_VERSION }}
+          body: ${{ steps.Changelog.outputs.changelog }}
+#          body: ${{ steps.extract_release_notes.outputs.release_notes }}
+          draft: false
+          prerelease: ${{ contains('-alpha', env.RELEASE_VERSION) || contains('-beta', env.RELEASE_VERSION) }}
+
       - name: Create pull request into master
         uses: peter-evans/create-pull-request@v3
         with:
-         token: ${{ secrets.GITHUB_TOKEN }}
-         branch: release/${{ env.RELEASE_VERSION }}
-         base: master
-         title: ${{ env.RELEASE_VERSION }} into master
-         reviewers: ${{ github.event.issue.user.login }}
-         committer: GitHub <noreply@github.com>
-         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-         labels: release
-         commit-message: |
-             Hi!
-             This PR was created in response workflow running.
-             I've updated the version.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: release/${{ env.RELEASE_VERSION }}
+          base: master
+          title: ${{ env.RELEASE_VERSION }} into master
+          reviewers: ${{ github.event.issue.user.login }}
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          labels: release
+          commit-message: |
+            Hi!
+            This PR was created in response workflow running.
+            I've updated the version.
 
       - name: Create pull request into develop
         uses: peter-evans/create-pull-request@v3
@@ -103,18 +121,3 @@ jobs:
             Hi!
             This PR was created in response workflow running.
             I've updated the version.
-      - name: Extract release notes
-        id: extract_release_notes
-        uses: ffurrer2/extract-release-notes@v1
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ env.RELEASE_VERSION }}
-          release_name: ${{ env.RELEASE_VERSION }}
-          body: ${{ steps.Changelog.outputs.changelog }}
-#          body: ${{ steps.extract_release_notes.outputs.release_notes }}
-          draft: false
-          prerelease: ${{ contains('-alpha', env.RELEASE_VERSION) || contains('-beta', env.RELEASE_VERSION) }}
