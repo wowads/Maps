@@ -22,7 +22,7 @@ jobs:
           pullRequests: true
           prWoLabels: true
           unreleased: true
-          addSections: '{"added":{"prefix": "### Added", "labels":["added","Added"]}, "changed":{"prefix": "### Changed", "labels":["changed","Changed"]}, "fixed":{"prefix": "### Fixed", "labels":["fixed","Fixed"]}, "documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
+          addSections: '{"added":{"prefix":"### Added","labels":["added","Added"]},"changed":{"prefix":"### Changed","labels":["changed","Changed"]},"fixed":{"prefix":"### Fixed","labels":["fixed","Fixed"]},"documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Changelog for PR
