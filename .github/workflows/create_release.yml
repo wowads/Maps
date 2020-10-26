@@ -42,15 +42,20 @@ jobs:
 #        with:
 #          version:  ${{ env.RELEASE_VERSION }}
 
-      - name: Update changelog
-        uses: scottbrenner/generate-changelog-action@master
-        id: Changelog
-        env:
-          REPO: ${{ github.repository }}
-
       - name: Create release branch
         run: |
           git checkout -b release/${{ env.RELEASE_VERSION }}
+          git push origin release/${{ env.RELEASE_VERSION }}
+
+      - name: Update changelog
+        uses: fabernovel/github-changelog-generator-action@v1
+        id: Changelog
+        with:
+          options: --token ${{ github.repository }}
+
+      - name: Push changelog
+        run: |
+          git commit -m "Update Changelog for ${{ env.RELEASE_VERSION }}"
           git push origin release/${{ env.RELEASE_VERSION }}
 #        run: |
 #          git add CHANGELOG.md
