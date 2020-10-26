@@ -45,7 +45,7 @@ jobs:
       - name: Update changelog
         uses: scottbrenner/generate-changelog-action@master
         id: Changelog
-        with:
+        env:
           REPO: ${{ github.repository }}
 
       - name: Create release branch
@@ -72,11 +72,11 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
          token: ${{ secrets.GITHUB_TOKEN }}
-         head: release/${{ env.RELEASE_VERSION }}
-         branch: master
+         branch: release/${{ env.RELEASE_VERSION }}
+         base: master
          title: ${{ env.RELEASE_VERSION }} into master
          reviewers: ${{ github.event.issue.user.login }}
-         commiter: GitHub <noreply@github.com>
+         committer: GitHub <noreply@github.com>
          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
          labels: release
          commit-message: |
@@ -88,11 +88,11 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          head: release/${{ env.RELEASE_VERSION }}
-          branch: develop
+          branch: release/${{ env.RELEASE_VERSION }}
+          base: develop
           title: ${{ env.RELEASE_VERSION }} into develop
           reviewers: ${{ github.event.issue.user.login }}
-          commiter: GitHub <noreply@github.com>
+          committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           labels: release
           commit-message: |
