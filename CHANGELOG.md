@@ -1,18 +1,12 @@
 # Changelog
 
+## [v0.0.31-alpha](https://github.com/wowmua/Maps/tree/v0.0.31-alpha) (2020-10-26)
+
 ## [v0.0.30-alpha](https://github.com/wowmua/Maps/tree/v0.0.30-alpha) (2020-10-26)
-
-## [v0.0.29-alpha](https://github.com/wowmua/Maps/tree/v0.0.29-alpha) (2020-10-26)
-
-## [v0.0.28-alpha](https://github.com/wowmua/Maps/tree/v0.0.28-alpha) (2020-10-26)
 
 **Closed issues:**
 
 - Test cc [\#2](https://github.com/wowmua/Maps/issues/2)
-
-**Merged pull requests:**
-
-- Update ci-changelog.yml [\#3](https://github.com/wowmua/Maps/pull/3)
 
 
 
