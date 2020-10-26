@@ -51,12 +51,7 @@ jobs:
           issuesWoLabels: true
           pullRequests: true
           prWoLabels: true
-          breakingLabel: 'Changed'
-          breakingLabels: 'backwards-incompatible,breaking,changed,Changed'
-          enhancementLabel: '## Added'
-          enhancementLabels: 'enhancement,Enhancement,added,Added'
-          bugsLabel: '## Fixed'
-          bugLabels: 'bug,Bug,fixed,Fixed'
+          addSections: '{"added":{"prefix": "### Added", "labels":["added","Added"]}, "changed":{"prefix": "### Changed", "labels":["changed","Changed"]}, "fixed":{"prefix": "### Fixed", "labels":["fixed","Fixed"]}, "documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
