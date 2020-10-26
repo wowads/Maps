@@ -52,6 +52,9 @@ jobs:
           pullRequests: true
           prWoLabels: true
           addSections: '{"added":{"prefix": "### Added", "labels":["added","Added"]}, "changed":{"prefix": "### Changed", "labels":["changed","Changed"]}, "fixed":{"prefix": "### Fixed", "labels":["fixed","Fixed"]}, "documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
+      - name: Fix headers in changelog
+        run: |
+          sed -Ei "s/###(.+)/### \1/" CHANGELOG.md
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
