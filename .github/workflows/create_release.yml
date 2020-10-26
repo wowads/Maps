@@ -29,7 +29,7 @@ jobs:
       - name: Test
         run: |
           echo ${{ github.event.ref }}
-          OBJDUMP(${{ github.event }})
+          echo ${{ github.event.head }}
 
       # Runs a single command using the runners shell
 #      - name: Update changelog
