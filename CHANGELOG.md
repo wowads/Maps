@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
+
+### Fixed
+
+- Fix [\#33](https://github.com/wowmua/Maps/pull/33)
+
 ## [v0.0.39-alpha] - 2020-10-27
 
 ### Changed
@@ -25,6 +31,10 @@
 
 ## [v0.0.37-alpha] - 2020-10-27
 
+### Fixed
+
+- Fix [\#21](https://github.com/wowmua/Maps/pull/21)
+
 ## [v0.0.36-alpha] - 2020-10-27
 
 ### Added
@@ -33,7 +43,6 @@
 
 ### Fixed
 
-- Fix [\#21](https://github.com/wowmua/Maps/pull/21)
 - Fix [\#20](https://github.com/wowmua/Maps/pull/20)
 - Fix [\#19](https://github.com/wowmua/Maps/pull/19)
 - Fix [\#18](https://github.com/wowmua/Maps/pull/18)
