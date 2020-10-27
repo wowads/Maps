@@ -2,6 +2,12 @@
 
 ## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
 
+### Fixed
+
+- Fix [\#21](https://github.com/wowmua/Maps/pull/21)
+
+## [v0.0.36-alpha](https://github.com/wowmua/Maps/tree/v0.0.36-alpha) (2020-10-27)
+
 ### Added
 
 - Added: Pandaria [\#15](https://github.com/wowmua/Maps/pull/15)
