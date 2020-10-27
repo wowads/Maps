@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
+
+### Fixed
+
+- Fix [\#22](https://github.com/wowmua/Maps/pull/22)
+
 ## [v0.0.37-alpha](https://github.com/wowmua/Maps/tree/v0.0.37-alpha) (2020-10-27)
 
 ### Fixed
