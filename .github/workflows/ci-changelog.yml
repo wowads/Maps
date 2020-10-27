@@ -22,10 +22,10 @@ jobs:
           pullRequests: true
           prWoLabels: true
           unreleased: true
-          bugsLabel: "### Fixed"
-          breakingLabel: '### Changed'
-          enhancementLabel: '### Added'
-          removedLabel: '### Removed'
+          bugsLabel: "###Fixed"
+          breakingLabel: '###Changed'
+          enhancementLabel: '###Added'
+          removedLabel: '###Removed'
           bugLabels: 'bug,bugs,fixed,Fixed'
           enhancementLabels: 'enhancement,Enhancement,added,Added'
           breakingLabels: 'breaking,backward-incompatible,changed,Changed'
