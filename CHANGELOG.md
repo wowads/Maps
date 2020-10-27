@@ -2,12 +2,13 @@
 
 ## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
 
-Added
+###
 
 - Added: Pandaria [\#15](https://github.com/wowmua/Maps/pull/15)
 
-Fixed
+###
 
+- Fix [\#19](https://github.com/wowmua/Maps/pull/19)
 - Fix [\#18](https://github.com/wowmua/Maps/pull/18)
 - Fix [\#17](https://github.com/wowmua/Maps/pull/17)
 - Fix [\#16](https://github.com/wowmua/Maps/pull/16)
@@ -21,7 +22,7 @@ Fixed
 
 ## [v0.0.35-alpha](https://github.com/wowmua/Maps/tree/v0.0.35-alpha) (2020-10-26)
 
-Changed
+###
 
 - Switch getter release notes [\#7](https://github.com/wowmua/Maps/pull/7)
 
