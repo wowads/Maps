@@ -10,6 +10,7 @@
 
 ### Fixed
 
+- Removing link to release [\#32](https://github.com/wowmua/Maps/pull/32)
 - Removing link to release [\#29](https://github.com/wowmua/Maps/pull/29)
 - Removing link to release [\#28](https://github.com/wowmua/Maps/pull/28)
 - Removing link to release [\#26](https://github.com/wowmua/Maps/pull/26)
@@ -27,6 +28,7 @@
 ### Fixed
 
 - Fix [\#21](https://github.com/wowmua/Maps/pull/21)
+- Fix [\#17](https://github.com/wowmua/Maps/pull/17)
 
 ## [v0.0.36-alpha] - 2020-10-27
 
@@ -39,7 +41,6 @@
 - Fix [\#20](https://github.com/wowmua/Maps/pull/20)
 - Fix [\#19](https://github.com/wowmua/Maps/pull/19)
 - Fix [\#18](https://github.com/wowmua/Maps/pull/18)
-- Fix [\#17](https://github.com/wowmua/Maps/pull/17)
 - Fix [\#16](https://github.com/wowmua/Maps/pull/16)
 - Fix [\#14](https://github.com/wowmua/Maps/pull/14)
 - Fix workflow [\#13](https://github.com/wowmua/Maps/pull/13)
