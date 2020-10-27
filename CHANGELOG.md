@@ -4,22 +4,23 @@
 
 ### Fixed
 
+- Removing link to release [\#26](https://github.com/wowmua/Maps/pull/26)
 - Fix [\#24](https://github.com/wowmua/Maps/pull/24)
 - Fix [\#23](https://github.com/wowmua/Maps/pull/23)
 
-##  [v0.0.38-alpha](https://github.com/wowmua/Maps/tree/v0.0.38-alpha) - 2020-10-27
+##[v0.0.38-alpha] - 2020-10-27
 
 ### Fixed
 
 - Fix [\#22](https://github.com/wowmua/Maps/pull/22)
 
-##  [v0.0.37-alpha](https://github.com/wowmua/Maps/tree/v0.0.37-alpha) - 2020-10-27
+##[v0.0.37-alpha] - 2020-10-27
 
 ### Fixed
 
 - Fix [\#21](https://github.com/wowmua/Maps/pull/21)
 
-##  [v0.0.36-alpha](https://github.com/wowmua/Maps/tree/v0.0.36-alpha) - 2020-10-27
+##[v0.0.36-alpha] - 2020-10-27
 
 ### Added
 
@@ -40,33 +41,33 @@
 - Fix [\#9](https://github.com/wowmua/Maps/pull/9)
 - Fix [\#8](https://github.com/wowmua/Maps/pull/8)
 
-##  [v0.0.35-alpha](https://github.com/wowmua/Maps/tree/v0.0.35-alpha) - 2020-10-26
+##[v0.0.35-alpha] - 2020-10-26
 
 ### Changed
 
 - Switch getter release notes [\#7](https://github.com/wowmua/Maps/pull/7)
 
-##  [v0.0.34-alpha](https://github.com/wowmua/Maps/tree/v0.0.34-alpha) - 2020-10-26
+##[v0.0.34-alpha] - 2020-10-26
 
 ### Merged pull requests
 
 - Fix [\#6](https://github.com/wowmua/Maps/pull/6)
 
-##  [v0.0.33](https://github.com/wowmua/Maps/tree/v0.0.33) - 2020-10-26
+##[v0.0.33] - 2020-10-26
 
 ### Merged pull requests
 
 - Fixed prerelease condition [\#5](https://github.com/wowmua/Maps/pull/5)
 
-##  [v0.0.32](https://github.com/wowmua/Maps/tree/v0.0.32) - 2020-10-26
+##[v0.0.32] - 2020-10-26
 
 ### Merged pull requests
 
 - Fix expresion [\#4](https://github.com/wowmua/Maps/pull/4)
 
-##  [v0.0.31-alpha](https://github.com/wowmua/Maps/tree/v0.0.31-alpha) - 2020-10-26
+##[v0.0.31-alpha] - 2020-10-26
 
-##  [v0.0.30-alpha](https://github.com/wowmua/Maps/tree/v0.0.30-alpha) - 2020-10-26
+##[v0.0.30-alpha] - 2020-10-26
 
 ### Closed issues
 
