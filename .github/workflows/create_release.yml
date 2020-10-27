@@ -51,7 +51,26 @@ jobs:
           issuesWoLabels: true
           pullRequests: true
           prWoLabels: true
-          addSections: '{"added":{"prefix": "### Added", "labels":["added","Added"]}, "changed":{"prefix": "### Changed", "labels":["changed","Changed"]}, "fixed":{"prefix": "### Fixed", "labels":["fixed","Fixed"]}, "documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
+          bugsLabel: "Fixed"
+          breakingLabel: 'Changed'
+          enhancementLabel: 'Added'
+          removedLabel: 'Removed'
+          bugLabels:
+            - 'bug'
+            - 'bugs'
+            - 'fixed'
+            - 'Fixed'
+          enhancementLabels:
+            - 'enhancement'
+            - 'Enhancement'
+            - 'added'
+            - 'Added'
+          breakingLabels:
+            - 'breaking'
+            - 'backward-incompatible'
+            - 'changed'
+            - 'Changed'
+#          addSections: '{"added":{"prefix": "### Added", "labels":["added","Added"]}, "changed":{"prefix": "### Changed", "labels":["changed","Changed"]}, "fixed":{"prefix": "### Fixed", "labels":["fixed","Fixed"]}, "documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
       - name: Fix headers in changelog
         run: |
           sed -Ei "s/###(.+)/### \1/" CHANGELOG.md
