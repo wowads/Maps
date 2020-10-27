@@ -2,26 +2,26 @@
 
 ## [Unreleased](https://github.com/wowmua/Maps/tree/HEAD)
 
-### Fixed bugs
+Added
 
+- Added: Pandaria [\#15](https://github.com/wowmua/Maps/pull/15)
+
+Fixed
+
+- Fix [\#18](https://github.com/wowmua/Maps/pull/18)
+- Fix [\#17](https://github.com/wowmua/Maps/pull/17)
+- Fix [\#16](https://github.com/wowmua/Maps/pull/16)
 - Fix [\#14](https://github.com/wowmua/Maps/pull/14)
 - Fix workflow [\#13](https://github.com/wowmua/Maps/pull/13)
 - Fix [\#12](https://github.com/wowmua/Maps/pull/12)
 - Fix [\#11](https://github.com/wowmua/Maps/pull/11)
 - Fix [\#10](https://github.com/wowmua/Maps/pull/10)
 - Fix [\#9](https://github.com/wowmua/Maps/pull/9)
-
-### Added
-
-- Added: Pandaria [\#15](https://github.com/wowmua/Maps/pull/15)
-
-### Fixed
-
 - Fix [\#8](https://github.com/wowmua/Maps/pull/8)
 
 ## [v0.0.35-alpha](https://github.com/wowmua/Maps/tree/v0.0.35-alpha) (2020-10-26)
 
-### Changed
+Changed
 
 - Switch getter release notes [\#7](https://github.com/wowmua/Maps/pull/7)
 
