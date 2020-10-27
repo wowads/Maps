@@ -65,6 +65,10 @@ jobs:
           sed -Ei "s/[*]{2}(.+):[*]{2}/### \1/" CHANGELOG.md
           sed -Ei "s/[#]{2} (.+) \((.+)\)/##\1 - \2/" CHANGELOG.md
           sed -Ei "s/[#]{2}(.+)\((.+)\)(.+)/## \1\3/" CHANGELOG.md
+      - name: Update Changelog
+        uses: thomaseizinger/keep-a-changelog-new-release@v1
+        with:
+          version: ${{ env.CURRENT_VERSION }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update Changelog for tag ${{ env.CURRENT_VERSION }}
