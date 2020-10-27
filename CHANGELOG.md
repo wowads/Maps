@@ -4,6 +4,7 @@
 
 ### Fixed
 
+- Fix [\#24](https://github.com/wowmua/Maps/pull/24)
 - Fix [\#23](https://github.com/wowmua/Maps/pull/23)
 
 ##  [v0.0.38-alpha](https://github.com/wowmua/Maps/tree/v0.0.38-alpha) - 2020-10-27
