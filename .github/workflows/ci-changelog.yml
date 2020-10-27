@@ -22,6 +22,7 @@ jobs:
           pullRequests: true
           prWoLabels: true
           unreleased: true
+          compareLink: false
           bugsLabel: "###Fixed"
           breakingLabel: '###Changed'
           enhancementLabel: '###Added'
