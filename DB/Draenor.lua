@@ -3,3 +3,135 @@
 --- Created by warfacez.
 --- DateTime: 25.10.20 5:04
 ---
+
+Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE = 525
+Maps.ZONE_DRAENOR_TANAAN_JUNGLE = 534
+Maps.ZONE_DRAENOR_TALADOR = 535
+Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY = 539
+Maps.ZONE_DRAENOR_SPIRES_OF_ARAK = 542
+Maps.ZONE_DRAENOR_GORGROND = 543
+Maps.ZONE_DRAENOR_NAGRAD = 550
+Maps.ZONE_DRAENOR_ASHRAN = 588
+
+Maps.ORPHAN_DRAENOR_FROSTWALL = 590
+Maps.ORPHAN_DRAENOR_LUNARFALL = 582
+
+
+addLocation(Maps.CONTINENT_DRAENOR_ID, Maps.COSMIC, Maps.TYPE_CONTINENT, "Draenor", {})
+
+-- Zones
+addLocation(Maps.ZONE_DRAENOR_ASHRAN, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, "Ashran", {})
+addLocation(Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, 'Shadowmoon Valley', {})
+addLocation(Maps.ZONE_DRAENOR_TANAAN_JUNGLE, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, "Tanaan Jungle", {})
+addLocation(Maps.ZONE_DRAENOR_TALADOR, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, "Talador", {})
+addLocation(Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, "Frostfire Ridge", {})
+addLocation(Maps.ZONE_DRAENOR_SPIRES_OF_ARAK, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, "Spires of Arak", {})
+addLocation(Maps.ZONE_DRAENOR_GORGROND, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, "Gorgrond", {})
+addLocation(Maps.ZONE_DRAENOR_NAGRAD, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ZONE, "Nagrand", {})
+
+-- ORPHAN
+addLocation(Maps.ORPHAN_DRAENOR_LUNARFALL, Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY, Maps.TYPE_ORPHAN, "Lunarfall", {})
+addLocation(Maps.ORPHAN_DRAENOR_FROSTWALL, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_ORPHAN, "Frostwall", {})
+addLocation(577, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ORPHAN, "Tanaan Jungle", {})
+addLocation(578, 577, Maps.TYPE_MICRO, "Umbral Halls", {})
+
+addLocation(594, Maps.ZONE_DRAENOR_TALADOR, Maps.TYPE_ORPHAN, "Shattrath City", {})
+addLocation(622, Maps.ZONE_DRAENOR_ASHRAN, Maps.TYPE_ORPHAN, "Stormshield", {})
+addLocation(624, Maps.ZONE_DRAENOR_ASHRAN, Maps.TYPE_ORPHAN, "Warspear", {})
+addLocation(933, Maps.CONTINENT_DRAENOR_ID, Maps.TYPE_ORPHAN, "Forge of Aeons", {})
+
+-- Ashran
+addLocation(589, Maps.ZONE_DRAENOR_ASHRAN, Maps.TYPE_MICRO, "Ashran Mine", {})
+
+
+-- Lunarfall
+addLocation(579, Maps.ORPHAN_DRAENOR_LUNARFALL, Maps.TYPE_MICRO, "Lunarfall Excavation", {})
+addLocation(580, Maps.ORPHAN_DRAENOR_LUNARFALL, Maps.TYPE_MICRO, "Lunarfall Excavation", {})
+addLocation(581, Maps.ORPHAN_DRAENOR_LUNARFALL, Maps.TYPE_MICRO, "Lunarfall Excavation", {})
+
+-- Frostwall
+addLocation(585, Maps.ORPHAN_DRAENOR_FROSTWALL, Maps.TYPE_MICRO, "Frostwall Mine", {})
+addLocation(586, Maps.ORPHAN_DRAENOR_FROSTWALL, Maps.TYPE_MICRO, "Frostwall Mine", {})
+addLocation(587, Maps.ORPHAN_DRAENOR_FROSTWALL, Maps.TYPE_MICRO, "Frostwall Mine", {})
+
+-- Tanaan Jungle
+addLocation(661, Maps.ZONE_DRAENOR_TANAAN_JUNGLE, Maps.TYPE_DUNGEON, "Hellfire Citadel - Hellfire Citadel", {662, 663, 664, 665, 666, 667, 668, 669, 670})
+addLocation(662, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - Hellfire Antechamber", {})
+addLocation(663, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - Hellfire Passage", {})
+addLocation(664, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - Pits of Mannoroth", {})
+addLocation(665, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - Court of Blood", {})
+addLocation(666, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - Grommash's Torment", {})
+addLocation(667, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - The Felborne Breach", {})
+addLocation(668, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - Halls of the Sargerei", {})
+addLocation(669, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - Destructor's Rise", {})
+addLocation(670, 661, Maps.TYPE_DUNGEON, "Hellfire Citadel - The Black Gate", {})
+
+
+-- Frostfire Ridge
+addLocation(526, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Turgall's Den - Bladespire Citadel", {})
+addLocation(527, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Turgall's Den - Bladespire Courtyard", {})
+addLocation(528, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Turgall's Den - Bladespire Throne", {})
+addLocation(529, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Turgall's Den - Sootstained Mines", {})
+addLocation(530, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Grom'gar", {})
+addLocation(531, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Grulloc's Grotto - Grulloc's Grotto", {})
+addLocation(532, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Grulloc's Grotto - Grulloc's Lair", {})
+addLocation(533, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_MICRO, "Snowfall Alcove", {})
+
+addLocation(573, Maps.ZONE_DRAENOR_FROSTFIRE_RIDGE, Maps.TYPE_DUNGEON, "Bloodmaul Slag Mines - Frostfire Ridge", {})
+
+
+-- Shadowmoon Valley
+addLocation(574, Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY, Maps.TYPE_DUNGEON, "Shadowmoon Burial Grounds - Crypt of the Ancients", {})
+addLocation(575, Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY, Maps.TYPE_DUNGEON, "Shadowmoon Burial Grounds - Altar of Shadow", {})
+addLocation(576, Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY, Maps.TYPE_DUNGEON, "Shadowmoon Burial Grounds - Edge of Reality", {})
+addLocation(540, Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY, Maps.TYPE_MICRO, "Bloodthorn Cave", {})
+addLocation(541, Maps.ZONE_DRAENOR_SHADOWMOON_VALLEY, Maps.TYPE_MICRO, "Den of Secrets", {})
+
+
+-- Talador
+addLocation(536, Maps.ZONE_DRAENOR_TALADOR, Maps.TYPE_MICRO, "Tomb of Lights", {})
+addLocation(537, Maps.ZONE_DRAENOR_TALADOR, Maps.TYPE_MICRO, "Tomb of Souls", {})
+addLocation(538, Maps.ZONE_DRAENOR_TALADOR, Maps.TYPE_MICRO, "The Breached Ossuary", {})
+addLocation(593, Maps.ZONE_DRAENOR_TALADOR, Maps.TYPE_DUNGEON, "Auchindoun", {})
+
+
+-- Spires of Arak
+addLocation(601, Maps.ZONE_DRAENOR_SPIRES_OF_ARAK, Maps.TYPE_DUNGEON, "Skyreach - Lower Quarter", {})
+addLocation(602, Maps.ZONE_DRAENOR_SPIRES_OF_ARAK, Maps.TYPE_DUNGEON, "Skyreach - Grand Spire", {})
+
+
+-- Gorgrond
+addLocation(544, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_MICRO, "Moira's Reach - Moira's Bastion", {})
+addLocation(545, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_MICRO, "Moira's Reach - The Armory", {})
+addLocation(546, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_MICRO, "Fissure of Fury - Fissure of Fury", {})
+addLocation(547, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_MICRO, "Fissure of Fury - Heart of Fury", {})
+addLocation(548, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_MICRO, "Cragplume Cauldron - Cragplume Crater", {})
+addLocation(549, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_MICRO, "Cragplume Cauldron - Cragplume Depths", {})
+addLocation(595, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Iron Docks", {})
+addLocation(596, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Blackrock Foundry - The Black Forge", {})
+addLocation(597, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Blackrock Foundry - Slagworks", {})
+addLocation(598, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Blackrock Foundry - The Workshop", {})
+addLocation(599, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Blackrock Foundry - Iron Assembly", {})
+addLocation(600, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Blackrock Foundry - The Crucible", {})
+addLocation(606, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Grimrail Depot - Train Depot", {})
+addLocation(607, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Grimrail Depot - Rafters", {})
+addLocation(608, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Grimrail Depot - Rear Train Cars", {})
+addLocation(609, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "Grimrail Depot - Forward Train Cars", {})
+
+addLocation(620, Maps.ZONE_DRAENOR_GORGROND, Maps.TYPE_DUNGEON, "The Everbloom - The Everbloom", {})
+addLocation(621, 620, Maps.TYPE_DUNGEON, "The Everbloom - The Overlook", {})
+
+
+-- Nagrand
+addLocation(551, Maps.ZONE_DRAENOR_NAGRAD, Maps.TYPE_MICRO, "The Masters' Cavern", {})
+addLocation(552, Maps.ZONE_DRAENOR_NAGRAD, Maps.TYPE_MICRO, "Stonecrag Gorge", {})
+addLocation(553, Maps.ZONE_DRAENOR_NAGRAD, Maps.TYPE_MICRO, "Oshu'gun", {})
+
+addLocation(610, Maps.ZONE_DRAENOR_NAGRAD, Maps.TYPE_DUNGEON, "Highmaul - Highmaul", {611, 612, 613, 614, 615})
+addLocation(611, 610, Maps.TYPE_DUNGEON, "Highmaul - Gladiator's Rest", {})
+addLocation(612, 610, Maps.TYPE_DUNGEON, "Highmaul - The Coliseum", {})
+addLocation(613, 610, Maps.TYPE_DUNGEON, "Highmaul - Chamber of Nullification", {})
+addLocation(614, 610, Maps.TYPE_DUNGEON, "Highmaul - Imperator's Rise", {})
+addLocation(615, 610, Maps.TYPE_DUNGEON, "Highmaul - Throne of the Imperator", {})
+
+

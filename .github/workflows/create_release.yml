@@ -56,7 +56,7 @@ jobs:
           enhancementLabel: '###Added'
           removedLabel: '###Removed'
           bugLabels: 'bug,bugs,fixed,Fixed'
-          enhancementLabels: 'enhancement,Enhancement,added,Added'
+          enhancementLabels: 'enhancement,Enhancement,added,Added,NeedAdd'
           breakingLabels: 'breaking,backward-incompatible,changed,Changed'
 #          addSections: '{"added":{"prefix": "### Added", "labels":["added","Added"]}, "changed":{"prefix": "### Changed", "labels":["changed","Changed"]}, "fixed":{"prefix": "### Fixed", "labels":["fixed","Fixed"]}, "documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
       - name: Fix headers in changelog

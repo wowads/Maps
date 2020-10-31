@@ -3,3 +3,93 @@
 --- Created by warfacez.
 --- DateTime: 25.10.20 5:04
 ---
+
+Maps.ZONE_OUTLAND_HELLFIRE_PENINSULA = 100
+Maps.ZONE_OUTLAND_ZANGARMARSH = 102
+Maps.ZONE_OUTLAND_SHADOWMOON_VALLEY = 104
+Maps.ZONE_OUTLAND_BLADES_EDGE_MOUNTAINS = 105
+Maps.ZONE_OUTLAND_NAGRAND = 107
+Maps.ZONE_OUTLAND_TEROKKAR_FOREST = 108
+Maps.ZONE_OUTLAND_NETHERSTORM = 109
+Maps.ZONE_OUTLAND_SHATTRATH_CITY = 111
+
+addLocation(Maps.CONTENT_OUTLAND_ID, Maps.COSMIC, Maps.TYPE_CONTINENT, "Outland", {})
+--addLocation(987, nil, Maps.TYPE_CONTINENT, "Outland", {})
+--addLocation(1467, nil, Maps.TYPE_CONTINENT, "Outland", {})
+
+-- Zones
+addLocation(Maps.ZONE_OUTLAND_HELLFIRE_PENINSULA, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Hellfire Peninsula", {})
+addLocation(Maps.ZONE_OUTLAND_ZANGARMARSH, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Zangarmarsh", {})
+addLocation(Maps.ZONE_OUTLAND_SHADOWMOON_VALLEY, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Shadowmoon Valley", {})
+addLocation(Maps.ZONE_OUTLAND_BLADES_EDGE_MOUNTAINS, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Blade's Edge Mountains", {})
+addLocation(Maps.ZONE_OUTLAND_NAGRAND, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Nagrand", {})
+addLocation(Maps.ZONE_OUTLAND_TEROKKAR_FOREST, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Terokkar Forest", {})
+addLocation(Maps.ZONE_OUTLAND_NETHERSTORM, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Netherstorm", {})
+addLocation(Maps.ZONE_OUTLAND_SHATTRATH_CITY, Maps.CONTENT_OUTLAND_ID, Maps.TYPE_ZONE, "Shattrath City", {})
+
+
+-- Orphans
+addLocation(397, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_ORPHAN, "Eye of the Storm", {})
+
+
+-- Hellfire Peninsula
+addLocation(246, Maps.ZONE_OUTLAND_HELLFIRE_PENINSULA, Maps.TYPE_DUNGEON, "The Shattered Halls", {})
+addLocation(261, Maps.ZONE_OUTLAND_HELLFIRE_PENINSULA, Maps.TYPE_DUNGEON, "The Blood Furnace", {})
+addLocation(347, Maps.ZONE_OUTLAND_HELLFIRE_PENINSULA, Maps.TYPE_DUNGEON, "Hellfire Ramparts", {})
+addLocation(331, Maps.ZONE_OUTLAND_HELLFIRE_PENINSULA, Maps.TYPE_DUNGEON, "Magtheridon's Lair", {})
+
+
+-- Netherstorm
+addLocation(112, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_ORPHAN, "Eye of the Storm", {})
+addLocation(889, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "Arcatraz - Stasis Block: Trion", {})
+addLocation(890, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "Arcatraz - Stasis Block: Maximus ", {})
+addLocation(266, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "The Botanica", {})
+addLocation(267, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "The Mechanar - The Mechanar", {})
+addLocation(268, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "The Mechanar - Calculation Chamber", {})
+addLocation(269, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "The Arcatraz - Stasis Block: Trion", {})
+addLocation(270, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "The Arcatraz - Stasis Block: Maximus", {})
+addLocation(271, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "The Arcatraz - Containment Core", {})
+addLocation(334, Maps.ZONE_OUTLAND_NETHERSTORM, Maps.TYPE_DUNGEON, "Tempest Keep", {})
+
+
+-- Shadowmoon Valley
+addLocation(490, Maps.ZONE_OUTLAND_SHADOWMOON_VALLEY, Maps.TYPE_DUNGEON, "Black Temple", {})
+addLocation(491, 490, Maps.TYPE_DUNGEON, "Black Temple - Karabor Sewers", {})
+addLocation(492, 490, Maps.TYPE_DUNGEON, "Black Temple - Sanctuary of Shadows", {})
+addLocation(493, 490, Maps.TYPE_DUNGEON, "Black Temple - Halls of Anguish", {})
+addLocation(494, 490, Maps.TYPE_DUNGEON, "Black Temple - Gorefiend's Vigil", {})
+addLocation(495, 490, Maps.TYPE_DUNGEON, "Black Temple - Den of Mortal Delights", {})
+addLocation(496, 490, Maps.TYPE_DUNGEON, "Black Temple - Chamber of Command", {})
+addLocation(497, 490, Maps.TYPE_DUNGEON, "Black Temple - Temple Summit", {})
+
+addLocation(339, Maps.ZONE_OUTLAND_SHADOWMOON_VALLEY, Maps.TYPE_DUNGEON, "Black Temple", {})
+addLocation(340, 339, Maps.TYPE_DUNGEON, "Black Temple - Karabor Sewers", {})
+addLocation(341, 339, Maps.TYPE_DUNGEON, "Black Temple - Sanctuary of Shadows", {})
+addLocation(342, 339, Maps.TYPE_DUNGEON, "Black Temple - Halls of Anguish", {})
+addLocation(343, 339, Maps.TYPE_DUNGEON, "Black Temple - Gorefiend's Vigil", {})
+addLocation(344, 339, Maps.TYPE_DUNGEON, "Black Temple - Den of Mortal Delights", {})
+addLocation(345, 339, Maps.TYPE_DUNGEON, "Black Temple - Chamber of Command", {})
+addLocation(346, 339, Maps.TYPE_DUNGEON, "Black Temple - Temple Summit", {})
+
+addLocation(759, Maps.ZONE_OUTLAND_SHADOWMOON_VALLEY, Maps.TYPE_DUNGEON, "Black Temple", {})
+
+
+-- Zangarmarsh
+addLocation(262, Maps.ZONE_OUTLAND_ZANGARMARSH, Maps.TYPE_DUNGEON, "The Underbog", {})
+addLocation(263, Maps.ZONE_OUTLAND_ZANGARMARSH, Maps.TYPE_DUNGEON, "The Steamvault - The Steamvault", {})
+addLocation(264, Maps.ZONE_OUTLAND_ZANGARMARSH, Maps.TYPE_DUNGEON, "The Steamvault - The Cooling Pools", {})
+addLocation(265, Maps.ZONE_OUTLAND_ZANGARMARSH, Maps.TYPE_DUNGEON, "The Slave Pens", {})
+addLocation(332, Maps.ZONE_OUTLAND_ZANGARMARSH, Maps.TYPE_DUNGEON, "Serpentshrine Cavern", {})
+
+
+-- Terokkar Forest
+addLocation(256, Maps.ZONE_OUTLAND_TEROKKAR_FOREST, Maps.TYPE_DUNGEON, "Auchenai Crypts - Halls of the Hereafter", {})
+addLocation(257, Maps.ZONE_OUTLAND_TEROKKAR_FOREST, Maps.TYPE_DUNGEON, "Auchenai Crypts - Bridge of Souls", {})
+addLocation(258, Maps.ZONE_OUTLAND_TEROKKAR_FOREST, Maps.TYPE_DUNGEON, "Sethekk Halls - Veil Sethekk", {})
+addLocation(259, Maps.ZONE_OUTLAND_TEROKKAR_FOREST, Maps.TYPE_DUNGEON, "Sethekk Halls - Halls of Mourning", {})
+addLocation(260, Maps.ZONE_OUTLAND_TEROKKAR_FOREST, Maps.TYPE_DUNGEON, "Shadow Labyrinth", {})
+addLocation(272, Maps.ZONE_OUTLAND_TEROKKAR_FOREST, Maps.TYPE_DUNGEON, "Mana-Tombs", {})
+
+
+-- Blade's Edge Mountains
+addLocation(330, Maps.ZONE_OUTLAND_BLADES_EDGE_MOUNTAINS, Maps.TYPE_DUNGEON, "Gruul's Lair", {})

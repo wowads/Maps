@@ -3,3 +3,156 @@
 --- Created by warfacez.
 --- DateTime: 25.10.20 11:12
 ---
+
+Maps.ZONE_NORTHREND_BOREAN_TUNDRA = 114
+Maps.ZONE_NORTHREND_DRAGONBLIGHT = 115
+Maps.ZONE_NORTHREND_GRIZZLY_HILLS = 116
+Maps.ZONE_NORTHREND_HOWLING_FJORD = 117
+Maps.ZONE_NORTHREND_ICECROWN = 118
+Maps.ZONE_NORTHREND_SHOLAZAR_BASIN = 119
+Maps.ZONE_NORTHREND_THE_STORM_PEAKS = 120
+Maps.ZONE_NORTHREND_ZULDRAK = 121
+Maps.ZONE_NORTHREND_WINTERGRASP = 123
+Maps.ZONE_NORTHREND_CRYSTALSONG_FOREST = 127
+Maps.ZONE_NORTHREND_HROTHGARS_LANDING = 170
+
+
+addLocation(Maps.CONTINENT_NORTHREND_ID, Maps.WORLD_AZEROTH, Maps.TYPE_CONTINENT,  "Northrend", {})
+
+-- Zones
+addLocation(Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Borean Tundra", {})
+addLocation(Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Dragonblight", {})
+addLocation(Maps.ZONE_NORTHREND_GRIZZLY_HILLS, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Grizzly Hills", {})
+addLocation(Maps.ZONE_NORTHREND_HOWLING_FJORD, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Howling Fjord", {})
+addLocation(Maps.ZONE_NORTHREND_ICECROWN, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Icecrown", {})
+addLocation(Maps.ZONE_NORTHREND_SHOLAZAR_BASIN, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Sholazar Basin", {})
+addLocation(Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "The Storm Peaks", {})
+addLocation(Maps.ZONE_NORTHREND_ZULDRAK, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Zul'Drak", {})
+addLocation(Maps.ZONE_NORTHREND_WINTERGRASP, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Wintergrasp", {})
+addLocation(Maps.ZONE_NORTHREND_CRYSTALSONG_FOREST, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Crystalsong Forest", {})
+addLocation(Maps.ZONE_NORTHREND_HROTHGARS_LANDING, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ZONE, "Hrothgar's Landing", {}) -- Need check
+
+
+-- Orphans
+addLocation(155, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_ORPHAN, "The Obsidian Sanctum", {})
+addLocation(200, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_ORPHAN, "The Ruby Sanctum", {})
+addLocation(142, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_ORPHAN, "The Oculus", {})
+addLocation(128, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_ORPHAN, "Strand of the Ancients", {})
+addLocation(169, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_ORPHAN, "Isle of Conquest", {})
+addLocation(184, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_ORPHAN, "Pit of Saron", {})
+addLocation(153, Maps.ZONE_NORTHREND_ZULDRAK, Maps.TYPE_ORPHAN, "Gundrak", {})
+addLocation(871, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_ORPHAN, "The Lost Glacier", {})
+addLocation(860, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_ORPHAN, "The Ruby Sanctum", {})
+addLocation(823, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_ORPHAN, "Pit of Saron", {})
+addLocation(799, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_ORPHAN, "The Oculus", {})
+addLocation(757, Maps.ZONE_NORTHREND_GRIZZLY_HILLS, Maps.TYPE_ORPHAN, "Ursoc's Lair", {})
+
+
+-- Northrend
+addLocation(897, Maps.CONTINENT_NORTHREND_ID, Maps.TYPE_DUNGEON, "The Deaths of Chromie - The Deaths of Chromie", {})
+addLocation(898, 897, Maps.TYPE_DUNGEON, "The Deaths of Chromie - Obsidian Dragonshrine", {})
+addLocation(899, 897, Maps.TYPE_DUNGEON, "The Deaths of Chromie - Andorhal", {})
+addLocation(900, 897, Maps.TYPE_DUNGEON, "The Deaths of Chromie - Mount Hyjal", {})
+addLocation(901, 897, Maps.TYPE_DUNGEON, "The Deaths of Chromie - The Well of Eternity", {})
+addLocation(902, 897, Maps.TYPE_DUNGEON, "The Deaths of Chromie - Stratholme", {})
+
+
+-- Borean Tundra
+addLocation(129, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Nexus", {})
+addLocation(141, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Eye of Eternity", {})
+
+addLocation(143, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Variance", {})
+addLocation(144, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Acceleration", {})
+addLocation(145, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Transmutation", {})
+addLocation(146, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Alignment", {})
+addLocation(881, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Eye of Eternity", {})
+addLocation(828, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Eye of Eternity", {})
+addLocation(801, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Transmutation", {})
+addLocation(802, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Acceleration", {})
+addLocation(803, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Variance", {})
+addLocation(800, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Oculus - Band of Alignment ", {})
+addLocation(370, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Nexus", {})
+addLocation(736, Maps.ZONE_NORTHREND_BOREAN_TUNDRA, Maps.TYPE_DUNGEON, "The Beyond", {})
+
+
+-- Dragonblight
+addLocation(132, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Ahn'kahet: The Old Kingdom", {})
+
+addLocation(157, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Azjol-Nerub - The Brood Pit", {})
+addLocation(158, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Azjol-Nerub - Hadronox's Lair", {})
+addLocation(159, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Azjol-Nerub - The Gilded Gate", {})
+addLocation(162, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Naxxramas - The Construct Quarter", {})
+addLocation(163, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Naxxramas - The Arachnid Quarter", {})
+addLocation(164, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Naxxramas - The Military Quarter", {})
+addLocation(165, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Naxxramas - The Plague Quarter", {})
+addLocation(166, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Naxxramas - The Lower Necropolis", {})
+addLocation(167, Maps.ZONE_NORTHREND_DRAGONBLIGHT, Maps.TYPE_DUNGEON, "Naxxramas - The Upper Necropolis", {})
+
+-- Grizzly Hills
+
+
+-- Howling Fjord
+addLocation(133, Maps.ZONE_NORTHREND_HOWLING_FJORD, Maps.TYPE_DUNGEON, "Utgarde Keep - Njorndir Preparation", {})
+addLocation(134, Maps.ZONE_NORTHREND_HOWLING_FJORD, Maps.TYPE_DUNGEON, "Utgarde Keep - Dragonflayer Ascent", {})
+addLocation(135, Maps.ZONE_NORTHREND_HOWLING_FJORD, Maps.TYPE_DUNGEON, "Utgarde Keep - Tyr's Terrace", {})
+addLocation(136, Maps.ZONE_NORTHREND_HOWLING_FJORD, Maps.TYPE_DUNGEON, "Utgarde Pinnacle - Lower Pinnacle", {})
+addLocation(137, Maps.ZONE_NORTHREND_HOWLING_FJORD, Maps.TYPE_DUNGEON, "Utgarde Pinnacle - Upper Pinnacle", {})
+
+
+-- Icecrown
+addLocation(171, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Trial of the Champion", {})
+addLocation(172, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Trial of the Crusader - The Argent Coliseum", {})
+addLocation(173, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Trial of the Crusader - The Icy Depths", {})
+addLocation(183, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "The Forge of Souls", {})
+
+addLocation(185, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Halls of Reflection", {})
+addLocation(186, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - The Lower Citadel", {})
+addLocation(187, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - The Rampart of Skulls", {})
+addLocation(188, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - Deathbringer's Rise", {})
+addLocation(189, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - The Frost Queen's Lair", {})
+addLocation(190, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - The Upper Reaches", {})
+addLocation(191, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - Royal Quarters", {})
+addLocation(192, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - The Frozen Throne", {})
+addLocation(193, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - Frostmourne", {})
+
+addLocation(698, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - Lower Acherus", {})
+addLocation(699, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - Upper Acherus", {})
+addLocation(700, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - Icecrown Citadel", {})
+addLocation(701, Maps.ZONE_NORTHREND_ICECROWN, Maps.TYPE_DUNGEON, "Icecrown Citadel - The Frozen Throne", {})
+
+
+-- Sholazar Basin
+addLocation(888, Maps.ZONE_NORTHREND_SHOLAZAR_BASIN, Maps.TYPE_DUNGEON, "Hall of Communion", {})
+
+
+-- The Storm Peaks
+addLocation(138, Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.TYPE_DUNGEON, "Halls of Lightning - Unyielding Garrison", {})
+addLocation(139, Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.TYPE_DUNGEON, "Halls of Lightning - Walk of the Makers", {})
+addLocation(140, Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.TYPE_DUNGEON, "Halls of Stone", {})
+addLocation(147, Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.TYPE_DUNGEON, "Ulduar - Ulduar", {})
+addLocation(148, 147, Maps.TYPE_DUNGEON, "Ulduar - The Antechamber of Ulduar", {})
+addLocation(149, 147, Maps.TYPE_DUNGEON, "Ulduar - The Inner Sanctum of Ulduar", {})
+addLocation(150, 147, Maps.TYPE_DUNGEON, "Ulduar - The Prison of Yogg-Saron", {})
+addLocation(151, 147, Maps.TYPE_DUNGEON, "Ulduar - The Spark of Imagination", {})
+addLocation(152, 147, Maps.TYPE_DUNGEON, "Ulduar - The Mind's Eye", {})
+
+addLocation(744, Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.TYPE_DUNGEON, "Ulduar - The Antechamber of Ulduar", {})
+addLocation(745, Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.TYPE_DUNGEON, "Ulduar - The Spark of Imagination", {})
+addLocation(746, Maps.ZONE_NORTHREND_THE_STORM_PEAKS, Maps.TYPE_DUNGEON, "Ulduar - The Observation Ring", {})
+
+
+-- Zul'Drak
+addLocation(154, Maps.ZONE_NORTHREND_ZULDRAK, Maps.TYPE_DUNGEON, "Gundrak", {})
+addLocation(160, Maps.ZONE_NORTHREND_ZULDRAK, Maps.TYPE_DUNGEON, "Drak'Tharon Keep - The Vestibules of Drak'Tharon", {})
+addLocation(161, Maps.ZONE_NORTHREND_ZULDRAK, Maps.TYPE_DUNGEON, "Drak'Tharon Keep - Drak'Tharon Overlook", {})
+
+
+-- Wintergrasp
+addLocation(156, Maps.ZONE_NORTHREND_WINTERGRASP, Maps.TYPE_DUNGEON, "Vault of Archavon - Wintergrasp", {})
+
+
+-- Crystalsong Forest
+addLocation(125, Maps.ZONE_NORTHREND_CRYSTALSONG_FOREST, Maps.TYPE_DUNGEON, "Dalaran - Dalaran City", {})
+addLocation(126, Maps.ZONE_NORTHREND_CRYSTALSONG_FOREST, Maps.TYPE_DUNGEON, "Dalaran - The Underbelly", {})
+addLocation(168, 125, Maps.TYPE_DUNGEON, "The Violet Hold", {})
+

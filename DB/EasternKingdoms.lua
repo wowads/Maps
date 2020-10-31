@@ -3,3 +3,361 @@
 --- Created by warfacez.
 --- DateTime: 25.10.20 10:54
 ---
+
+Maps.ZONE_EASTERN_KINGDOMS_ARATHI_HIGHLANDS = 14
+Maps.ZONE_EASTERN_KINGDOMS_BADLANDS = 15
+
+Maps.ZONE_EASTERN_KINGDOMS_BLASTED_LANDS = 17
+Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES = 18
+Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST = 21
+Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS = 22
+Maps.ZONE_EASTERN_KINGDOMS_EASTERN_PLAGUELANDS = 23
+Maps.ZONE_EASTERN_KINGDOMS_HILLSBRAD_FOOTHILLS = 25
+Maps.ZONE_EASTERN_KINGDOMS_THE_HINTERLANDS = 26
+Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH = 27
+Maps.ZONE_EASTERN_KINGDOMS_SEARING_GORGE = 32
+Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES = 36
+Maps.ZONE_EASTERN_KINGDOMS_ELWYNN_FOREST = 37
+Maps.ZONE_EASTERN_KINGDOMS_NORTHSHIRE = 425
+Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS = 42
+Maps.ZONE_EASTERN_KINGDOMS_DUSKWOOD = 47
+Maps.ZONE_EASTERN_KINGDOMS_LOCH_MODAN = 48
+Maps.ZONE_EASTERN_KINGDOMS_REDRIDGE_MOUNTAINS = 49
+Maps.ZONE_EASTERN_KINGDOMS_NORTHERN_STRANGLETHORN = 50
+Maps.ZONE_EASTERN_KINGDOMS_SWAMP_OF_SORROWS = 51
+Maps.ZONE_EASTERN_KINGDOMS_WESTFALL = 52
+Maps.ZONE_EASTERN_KINGDOMS_WETLANDS = 56
+Maps.ZONE_EASTERN_KINGDOMS_STORMWIND_CITY = 84
+Maps.ZONE_EASTERN_KINGDOMS_IRONFORGE = 87
+Maps.ZONE_EASTERN_KINGDOMS_UNDERCITY = 90
+Maps.ZONE_EASTERN_KINGDOMS_EVERSONG_WOODS = 94
+Maps.ZONE_EASTERN_KINGDOMS_GHOSTLANDS = 95
+Maps.ZONE_EASTERN_KINGDOMS_SILVERMOON_CITY = 110
+Maps.ZONE_EASTERN_KINGDOMS_ISLE_OF_QUELDANAS = 122
+Maps.ZONE_EASTERN_KINGDOMS_GILNEAS_CITY = 202
+Maps.ZONE_EASTERN_KINGDOMS_VASHJIR = 203
+Maps.ZONE_EASTERN_KINGDOMS_THE_CAPE_OF_STRANGLETHORN = 210
+Maps.ZONE_EASTERN_KINGDOMS_STRANGLETHORN_VALE_1 = 224
+Maps.ZONE_EASTERN_KINGDOMS_TWILIGHT_HIGHLANDS = 241
+Maps.ZONE_EASTERN_KINGDOMS_TOL_BARAD = 244
+Maps.ZONE_EASTERN_KINGDOMS_TOL_BARAD_PENINSULA = 245
+Maps.ZONE_EASTERN_KINGDOMS_DEATHKNELL = 465
+Maps.ZONE_EASTERN_KINGDOMS_SUNSTRIDER_ISLE = 467
+Maps.ZONE_EASTERN_KINGDOMS_NEW_TINKERTOWN = 469
+Maps.ZONE_EASTERN_KINGDOMS_STRANGLETHORN_VALE_2 = 1274
+Maps.ZONE_EASTERN_KINGDOMS_KELPTHAR_FOREST = 201
+Maps.ZONE_EASTERN_KINGDOMS_ABYSSAL_DEPTHS = 204
+Maps.ZONE_EASTERN_KINGDOMS_SHIMMERING_EXPANSE = 205
+Maps.ZONE_EASTERN_KINGDOMS_RUINS_OF_GILNEAS = 217
+
+
+addLocation(Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.WORLD_AZEROTH, Maps.TYPE_CONTINENT, 'Eastern Kingdoms', {})
+
+-- Zones
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_ARATHI_HIGHLANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, 'Arathi Highlands', {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_BADLANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, 'Badlands', {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_BLASTED_LANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, 'Blasted Lands', {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, 'Tirisfal Glades', {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, 'Silverpine Forest', {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, 'Western Plaguelands', {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_EASTERN_PLAGUELANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, 'Eastern Plaguelands', {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_HILLSBRAD_FOOTHILLS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Hillsbrad Foothills", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_THE_HINTERLANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "The Hinterlands", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Dun Morogh", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_SEARING_GORGE, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Searing Gorge", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Burning Steppes", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_ELWYNN_FOREST, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Elwynn Forest", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_NORTHSHIRE, Maps.ZONE_EASTERN_KINGDOMS_ELWYNN_FOREST, Maps.TYPE_ZONE, "Northshire", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Deadwind Pass", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_DUSKWOOD, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Duskwood", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_LOCH_MODAN, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Loch Modan", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_REDRIDGE_MOUNTAINS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Redridge Mountains", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_NORTHERN_STRANGLETHORN, Maps.ZONE_EASTERN_KINGDOMS_STRANGLETHORN_VALE_1, Maps.TYPE_ZONE, "Northern Stranglethorn", {}) -- Stranglethorn Vale
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_SWAMP_OF_SORROWS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Swamp of Sorrows", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Westfall", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_WETLANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Wetlands", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_STORMWIND_CITY, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Stormwind City", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_IRONFORGE, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Ironforge", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_UNDERCITY, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Undercity", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_EVERSONG_WOODS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Eversong Woods", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_GHOSTLANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Ghostlands", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_SILVERMOON_CITY, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Silvermoon City", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_ISLE_OF_QUELDANAS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Isle of Quel'Danas", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_STRANGLETHORN_VALE_1, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Stranglethorn Vale", {})
+
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_STRANGLETHORN_VALE_2, Maps.CONTINENT_EASTERN_KINGDOMS_ID2, Maps.TYPE_ZONE, "Stranglethorn Vale", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_THE_CAPE_OF_STRANGLETHORN, Maps.ZONE_EASTERN_KINGDOMS_STRANGLETHORN_VALE_1, Maps.TYPE_ZONE, "The Cape of Stranglethorn", {})
+
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_VASHJIR, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Vashj'ir", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_TOL_BARAD, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Tol Barad", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_TOL_BARAD_PENINSULA, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Tol Barad Peninsula", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_TWILIGHT_HIGHLANDS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Twilight Highlands", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_DEATHKNELL, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_ZONE, "Deathknell", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_SUNSTRIDER_ISLE, Maps.ZONE_EASTERN_KINGDOMS_EVERSONG_WOODS, Maps.TYPE_ZONE, "Sunstrider Isle", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_NEW_TINKERTOWN, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_ZONE, "New Tinkertown", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_KELPTHAR_FOREST, Maps.ZONE_EASTERN_KINGDOMS_VASHJIR, Maps.TYPE_ZONE, "Kelp'thar Forest", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_ABYSSAL_DEPTHS, Maps.ZONE_EASTERN_KINGDOMS_VASHJIR, Maps.TYPE_ZONE, "Abyssal Depths", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_SHIMMERING_EXPANSE, Maps.ZONE_EASTERN_KINGDOMS_VASHJIR, Maps.TYPE_ZONE, "Shimmering Expanse", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_RUINS_OF_GILNEAS, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ZONE, "Ruins of Gilneas", {})
+
+
+-- Orphans
+addLocation(179, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ORPHAN, "Gilneas", {})
+addLocation(275, 179, Maps.TYPE_ORPHAN, "The Battle for Gilneas", {})
+addLocation(180, 179, Maps.TYPE_MICRO, "Emberstone Mine", {181, 182})
+addLocation(181, 179, Maps.TYPE_MICRO, "Greymane Manor - Main Floor", {})
+addLocation(182, 179, Maps.TYPE_MICRO, "Greymane Manor - Upper Floor", {})
+addLocation(Maps.ZONE_EASTERN_KINGDOMS_GILNEAS_CITY, 179, Maps.TYPE_ZONE, "Gilneas City", {})
+addLocation(91, Maps.ZONE_EASTERN_KINGDOMS_HILLSBRAD_FOOTHILLS, Maps.TYPE_ORPHAN, "Alterac Valley", {})
+
+addLocation(206, Maps.ZONE_EASTERN_KINGDOMS_TWILIGHT_HIGHLANDS, Maps.TYPE_ORPHAN, "Twin Peaks", {})
+addLocation(623, Maps.ZONE_EASTERN_KINGDOMS_HILLSBRAD_FOOTHILLS, Maps.TYPE_ORPHAN, "Hillsbrad Foothills (Southshore vs. Tarren Mill)", {})
+addLocation(523, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_ORPHAN, "Dun Morogh", {})
+addLocation(427, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_ORPHAN, "Coldridge Valley", {})
+addLocation(93, Maps.ZONE_EASTERN_KINGDOMS_ARATHI_HIGHLANDS, Maps.TYPE_ORPHAN, "Arathi Basin", {})
+addLocation(124, Maps.ZONE_EASTERN_KINGDOMS_EASTERN_PLAGUELANDS, Maps.TYPE_ORPHAN, "Plaguelands: The Scarlet Enclave", {})
+addLocation(233, Maps.ZONE_EASTERN_KINGDOMS_NORTHERN_STRANGLETHORN, Maps.TYPE_ORPHAN, "Zul'Gurub", {})
+addLocation(943, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ORPHAN, "Arathi Highlands", {})
+addLocation(906, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ORPHAN, "Arathi Highlands", {})
+
+addLocation(908, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ORPHAN, "Ruins of Lordaeron", {})
+addLocation(998, 908, Maps.TYPE_ZONE, "Undercity", {})
+
+addLocation(844, Maps.ZONE_EASTERN_KINGDOMS_ARATHI_HIGHLANDS, Maps.TYPE_ORPHAN, "Arathi Basin", {})
+addLocation(837, Maps.ZONE_EASTERN_KINGDOMS_ARATHI_HIGHLANDS, Maps.TYPE_ORPHAN, "Arathi Basin - Arathi Highlands", {})
+addLocation(838, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_ORPHAN, "Battle for Blackrock Mountain - Burning Steppes", {})
+addLocation(834, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_ORPHAN, "Coldridge Valley", {})
+addLocation(218, Maps.ZONE_EASTERN_KINGDOMS_RUINS_OF_GILNEAS, Maps.TYPE_ORPHAN, "Ruins of Gilneas City", {})
+addLocation(337, Maps.ZONE_EASTERN_KINGDOMS_NORTHERN_STRANGLETHORN, Maps.TYPE_ORPHAN, "Zul'Gurub", {})
+
+addLocation(773, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_ORPHAN, "Tol Barad", {})
+
+
+-- Tol Barad
+addLocation(774, Maps.ZONE_EASTERN_KINGDOMS_TOL_BARAD, Maps.TYPE_DUNGEON, "Tol Barad", {})
+
+
+-- Eastern Kingdoms
+addLocation(783, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_DUNGEON, "The Emerald Nightmare - The Hinterlands", {})
+addLocation(784, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_DUNGEON, "The Emerald Nightmare - Duskwood", {})
+
+
+-- Abyssal Depths
+addLocation(322, Maps.ZONE_EASTERN_KINGDOMS_ABYSSAL_DEPTHS, Maps.TYPE_DUNGEON, "Throne of the Tides - Abyssal Halls", {})
+addLocation(323, Maps.ZONE_EASTERN_KINGDOMS_ABYSSAL_DEPTHS, Maps.TYPE_DUNGEON, "Throne of the Tides - Throne of Neptulon", {})
+addLocation(742, Maps.ZONE_EASTERN_KINGDOMS_ABYSSAL_DEPTHS, Maps.TYPE_DUNGEON, "Abyssal Maw - Abyssal Halls", {})
+addLocation(743, Maps.ZONE_EASTERN_KINGDOMS_ABYSSAL_DEPTHS, Maps.TYPE_DUNGEON, "Abyssal Maw - Throne of Neptulon", {})
+
+
+-- Arathi Highlands
+
+
+-- Tirisfal Glades
+addLocation(19, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_MICRO, 'ScarletMonasteryEntrance', {})
+addLocation(20, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_MICRO, "Keeper's Rest", {})
+addLocation(466, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_MICRO, "Night Web's Hollow", {})
+addLocation(431, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Halls - Training Grounds", {})
+addLocation(432, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Halls - Athenaeum", {})
+addLocation(435, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Forlorn Cloister", {})
+addLocation(436, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Crusader's Chapel", {})
+
+addLocation(302, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Floor 1", {})
+addLocation(303, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Floor 2", {})
+addLocation(304, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Floor 3", {})
+addLocation(305, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Floor 4", {})
+addLocation(804, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Floor 1 ", {})
+addLocation(805, Maps.ZONE_EASTERN_KINGDOMS_TIRISFAL_GLADES, Maps.TYPE_DUNGEON, "Scarlet Monastery - Floor 2", {})
+
+
+-- Eastern Plaguelands
+addLocation(24, Maps.ZONE_EASTERN_KINGDOMS_EASTERN_PLAGUELANDS, Maps.TYPE_MICRO, "Light's HopeChapel", {})
+addLocation(317, Maps.ZONE_EASTERN_KINGDOMS_EASTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "Stratholme - Crusader's Square", {})
+addLocation(318, Maps.ZONE_EASTERN_KINGDOMS_EASTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "Stratholme - The Gauntlet", {})
+
+
+-- Western Plaguelands
+addLocation(476, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "Scholomance - The Reliquary", {})
+addLocation(477, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "Scholomance - Chamber of Summoning", {})
+addLocation(478, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "Scholomance - The Upper Study", {})
+addLocation(479, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "Scholomance - Headmaster's Study", {})
+addLocation(306, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "ScholomanceOLD - The Reliquary", {})
+addLocation(307, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "ScholomanceOLD - Chamber of Summoning", {})
+addLocation(308, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "ScholomanceOLD - The Upper Study", {})
+addLocation(309, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "ScholomanceOLD - Headmaster's Study", {})
+addLocation(827, Maps.ZONE_EASTERN_KINGDOMS_WESTERN_PLAGUELANDS, Maps.TYPE_DUNGEON, "Stratholme", {})
+
+
+-- Hillsbrad Foothills
+
+
+
+-- Dun Morogh
+addLocation(28, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_MICRO, "Coldridge Pass", {})
+addLocation(29, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_MICRO, "The Grizzled Den", {})
+addLocation(30, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_MICRO, "New Tinkertown", {})
+addLocation(31, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_MICRO, "Gol'Bolar Quarry", {})
+addLocation(470, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_MICRO, "Frostmane Hold", {})
+addLocation(428, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_MICRO, "Frostmane Hovel", {})
+addLocation(226, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_DUNGEON, "Gnomeregan - The Hall of Gears", {})
+addLocation(227, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_DUNGEON, "Gnomeregan - The Dormitory", {})
+addLocation(228, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_DUNGEON, "Gnomeregan - Launch Bay", {})
+addLocation(229, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_DUNGEON, "Gnomeregan - Tinkers' Court", {})
+addLocation(840, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_DUNGEON, "Gnomeregan - Floor 1", {})
+addLocation(841, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_DUNGEON, "Gnomeregan - Floor 2", {})
+addLocation(842, Maps.ZONE_EASTERN_KINGDOMS_DUN_MOROGH, Maps.TYPE_DUNGEON, "Gnomeregan - Floor 3", {})
+
+
+-- Searing Gorge
+addLocation(35, Maps.ZONE_EASTERN_KINGDOMS_SEARING_GORGE, Maps.TYPE_MICRO, "Blackrock Mountain - Blackrock Depths", {})
+
+addLocation(242, Maps.ZONE_EASTERN_KINGDOMS_SEARING_GORGE, Maps.TYPE_DUNGEON, "Blackrock Depths - Detention Block", {})
+addLocation(243, Maps.ZONE_EASTERN_KINGDOMS_SEARING_GORGE, Maps.TYPE_DUNGEON, "Blackrock Depths - Shadowforge City", {})
+
+
+-- Burning Steppes
+addLocation(33, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_MICRO, "Blackrock Mountain - Blackrock Spire", {})
+addLocation(34, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_MICRO, "Blackrock Mountain - Blackrock Caverns", {})
+
+addLocation(250, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Spire - Tazz'Alor", {})
+addLocation(251, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Spire - Skitterweb Tunnels", {})
+addLocation(252, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Spire - Hordemar City", {})
+addLocation(253, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Spire - Hall of Blackhand", {})
+addLocation(254, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Spire - Halycon's Lair", {})
+addLocation(255, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Spire - Chamber of Battle", {})
+
+addLocation(283, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Caverns - Chamber of Incineration", {})
+addLocation(284, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackrock Caverns - Twilight Forge", {})
+addLocation(285, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackwing Descent - The Broken Hall", {})
+addLocation(286, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackwing Descent - Vault of the Shadowflame", {})
+addLocation(287, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackwing Lair - Dragonmaw Garrison", {})
+addLocation(288, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackwing Lair - Halls of Strife", {})
+addLocation(289, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackwing Lair - Crimson Laboratories", {})
+addLocation(290, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Blackwing Lair - Nefarian's Lair", {})
+
+addLocation(616, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Upper Blackrock Spire - Dragonspire Hall", {})
+addLocation(617, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Upper Blackrock Spire - The Rookery", {})
+addLocation(618, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Upper Blackrock Spire - Hall of Blackhand", {})
+addLocation(232, Maps.ZONE_EASTERN_KINGDOMS_BURNING_STEPPES, Maps.TYPE_DUNGEON, "Molten Core", {})
+
+
+-- Elwynn Forest
+addLocation(38, Maps.ZONE_EASTERN_KINGDOMS_ELWYNN_FOREST, Maps.TYPE_MICRO, "Fargodeep Mine - Fargodeep Mine", {})
+addLocation(39, Maps.ZONE_EASTERN_KINGDOMS_ELWYNN_FOREST, Maps.TYPE_MICRO, "Fargodeep Mine - Lower Mines", {})
+addLocation(40, Maps.ZONE_EASTERN_KINGDOMS_ELWYNN_FOREST, Maps.TYPE_MICRO, "Jasperlode Mine", {})
+addLocation(426, Maps.ZONE_EASTERN_KINGDOMS_ELWYNN_FOREST, Maps.TYPE_MICRO, "Echo Ridge Mine", {})
+
+
+-- Deadwind Pass
+addLocation(41, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_MICRO, "Dalaran", {})
+addLocation(43, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_MICRO, "The Master's Cellar", {44, 45})
+addLocation(44, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_MICRO, "The Master's Cellar - The Master's Cellar", {})
+addLocation(45, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_MICRO, "The Master's Cellar - Lower Cellar", {})
+addLocation(46, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_MICRO, "Karazhan Catacombs", {})
+
+addLocation(501, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_DUNGEON, "Dalaran - Dalaran City", {})
+addLocation(502, Maps.CONTINENT_EASTERN_KINGDOMS_ID, Maps.TYPE_DUNGEON, "Dalaran - The Underbelly", {})
+
+addLocation(350, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Servant's Quarters", {})
+addLocation(351, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Upper Livery Stables", {})
+addLocation(352, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Banquet Hall", {})
+addLocation(353, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Guest Chambers", {})
+addLocation(354, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Opera Hall Balcony", {})
+addLocation(355, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Master's Terrace", {})
+addLocation(356, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Lower Broken Stair", {})
+addLocation(357, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Upper Broken Stair", {})
+addLocation(358, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Menagerie", {})
+addLocation(359, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Guardian's Library", {})
+addLocation(360, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Repository", {})
+addLocation(361, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Upper Library", {})
+addLocation(362, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Celestial Watch", {})
+addLocation(363, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Gamesman's Hall", {})
+addLocation(364, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Medivh's Chambers", {})
+addLocation(365, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Power Station", {})
+addLocation(366, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Netherspace", {})
+
+addLocation(809, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Servant's Quarters", {})
+addLocation(810, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Upper Livery Stables", {})
+addLocation(811, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Banquet Hall", {})
+addLocation(812, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Guest Chambers", {})
+addLocation(813, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Opera Hall Balcony", {})
+addLocation(814, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Master's Terrace", {})
+addLocation(815, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Lower Broken Stair", {})
+addLocation(816, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Upper Broken Stair", {})
+addLocation(817, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Menagerie", {})
+addLocation(818, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Guardian's Library", {})
+addLocation(819, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Library Floor", {})
+addLocation(820, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Upper Library", {})
+addLocation(821, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Gamesman's Hall", {})
+addLocation(822, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Netherspace", {})
+addLocation(794, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Servant's Quarters", {})
+addLocation(795, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Grand Ballroom", {})
+addLocation(796, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - The Opera Hall", {})
+addLocation(797, Maps.ZONE_EASTERN_KINGDOMS_DEADWIND_PASS, Maps.TYPE_DUNGEON, "Karazhan - Guardian's Library", {})
+
+
+-- Westfall
+addLocation(53, Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.TYPE_MICRO, "Gold Coast Quarry", {})
+addLocation(54, Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.TYPE_MICRO, "Jangolode Mine", {})
+addLocation(55, Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.TYPE_MICRO, "The Deadmines", {})
+
+addLocation(291, Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.TYPE_DUNGEON, "The Deadmines - The Deadmines", {})
+addLocation(292, Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.TYPE_DUNGEON, "The Deadmines - Ironclad Cove", {})
+addLocation(835, Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.TYPE_DUNGEON, "The Deadmines - Floor 1", {})
+addLocation(836, Maps.ZONE_EASTERN_KINGDOMS_WESTFALL, Maps.TYPE_DUNGEON, "The Deadmines - Floor 2", {})
+
+
+-- Ghostlands
+addLocation(96, Maps.ZONE_EASTERN_KINGDOMS_GHOSTLANDS, Maps.TYPE_MICRO, "Amani Catacombs", {})
+addLocation(333, Maps.ZONE_EASTERN_KINGDOMS_GHOSTLANDS, Maps.TYPE_ORPHAN, "Zul'Aman", {})
+
+
+-- Stormwind City
+addLocation(499, Maps.ZONE_EASTERN_KINGDOMS_STORMWIND_CITY, Maps.TYPE_DUNGEON, "Deeprun Tram - Deeprun Tram", {})
+addLocation(500, Maps.ZONE_EASTERN_KINGDOMS_STORMWIND_CITY, Maps.TYPE_DUNGEON, "Deeprun Tram - Bizmo's Brawlpub", {})
+addLocation(225, Maps.ZONE_EASTERN_KINGDOMS_STORMWIND_CITY, Maps.TYPE_DUNGEON, "The Stockade", {})
+
+
+-- Stranglethorn Vale
+addLocation(423, Maps.ZONE_EASTERN_KINGDOMS_STRANGLETHORN_VALE_1, Maps.TYPE_DUNGEON, "Silvershard Mines", {})
+
+
+-- Tol Barad
+addLocation(282, Maps.ZONE_EASTERN_KINGDOMS_TOL_BARAD, Maps.TYPE_DUNGEON, "Baradin Hold", {})
+
+
+-- Twilight Highlands
+addLocation(293, Maps.ZONE_EASTERN_KINGDOMS_TWILIGHT_HIGHLANDS, Maps.TYPE_DUNGEON, "Grim Batol", {})
+addLocation(294, Maps.ZONE_EASTERN_KINGDOMS_TWILIGHT_HIGHLANDS, Maps.TYPE_DUNGEON, "The Bastion of Twilight - The Twilight Enclave", {})
+addLocation(295, Maps.ZONE_EASTERN_KINGDOMS_TWILIGHT_HIGHLANDS, Maps.TYPE_DUNGEON, "The Bastion of Twilight - Throne of the Apocalypse", {})
+addLocation(296, Maps.ZONE_EASTERN_KINGDOMS_TWILIGHT_HIGHLANDS, Maps.TYPE_DUNGEON, "The Bastion of Twilight - The Twilight Caverns", {})
+
+
+-- Vashj'ir
+
+
+-- Badlands
+addLocation(16, Maps.ZONE_EASTERN_KINGDOMS_BADLANDS, Maps.TYPE_MICRO, 'Uldaman', {})
+addLocation(230, Maps.ZONE_EASTERN_KINGDOMS_BADLANDS, Maps.TYPE_DUNGEON, "Uldaman - Hall of the Keepers", {})
+addLocation(231, Maps.ZONE_EASTERN_KINGDOMS_BADLANDS, Maps.TYPE_DUNGEON, "Uldaman - Khaz'Goroth's Seat", {})
+
+
+-- Silverpine Forest
+addLocation(310, Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.TYPE_DUNGEON, "Shadowfang Keep - The Courtyard", {})
+addLocation(311, Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.TYPE_DUNGEON, "Shadowfang Keep - Dining Hall", {})
+addLocation(312, Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.TYPE_DUNGEON, "Shadowfang Keep - The Vacant Den", {})
+addLocation(313, Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.TYPE_DUNGEON, "Shadowfang Keep - Lower Observatory", {})
+addLocation(314, Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.TYPE_DUNGEON, "Shadowfang Keep - Upper Observatory", {})
+addLocation(315, Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.TYPE_DUNGEON, "Shadowfang Keep - Lord Godfrey's Chamber", {})
+addLocation(316, Maps.ZONE_EASTERN_KINGDOMS_SILVERPINE_FOREST, Maps.TYPE_DUNGEON, "Shadowfang Keep - The Wall Walk", {})
+
+
+-- Isle of Quel'Danas
+addLocation(335, Maps.ZONE_EASTERN_KINGDOMS_ISLE_OF_QUELDANAS, Maps.TYPE_DUNGEON, "Sunwell Plateau - Sunwell Plateau", {})
+addLocation(336, 335, Maps.TYPE_DUNGEON, "Sunwell Plateau - Shrine of the Eclipse", {})
+addLocation(973, 335, Maps.TYPE_DUNGEON, "The Sunwell", {})
+addLocation(348, Maps.ZONE_EASTERN_KINGDOMS_ISLE_OF_QUELDANAS, Maps.TYPE_DUNGEON, "Magisters' Terrace - Grand Magister's Asylum", {})
+addLocation(349, Maps.ZONE_EASTERN_KINGDOMS_ISLE_OF_QUELDANAS, Maps.TYPE_DUNGEON, "Magisters' Terrace - Observation Grounds", {})
+
+
+-- Swamp of Sorrows
+addLocation(220, Maps.ZONE_EASTERN_KINGDOMS_SWAMP_OF_SORROWS, Maps.TYPE_DUNGEON, "The Temple of Atal'Hakkar", {})

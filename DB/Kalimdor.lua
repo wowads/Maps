@@ -3,3 +3,238 @@
 --- Created by warfacez.
 --- DateTime: 25.10.20 8:50
 ---
+
+Maps.ZONE_KALIMDOR_DUROTAR = 1
+Maps.ZONE_KALIMDOR_MULGORE = 7
+Maps.ZONE_KALIMDOR_NORTHERN_BARRENS = 10
+Maps.ZONE_KALIMDOR_TELDRASSIL = 57
+Maps.ZONE_KALIMDOR_DARKSHORE = 62
+Maps.ZONE_KALIMDOR_ASHENVALE = 63
+Maps.ZONE_KALIMDOR_THOUSAND_NEEDLES = 64
+Maps.ZONE_KALIMDOR_STONETALON_MOUNTAINS = 65
+Maps.ZONE_KALIMDOR_DESOLACE = 66
+Maps.ZONE_KALIMDOR_FERALAS = 69
+Maps.ZONE_KALIMDOR_DUSTWALLOW_MARSH = 70
+Maps.ZONE_KALIMDOR_TANARIS = 71
+Maps.ZONE_KALIMDOR_AZSHARA = 76
+Maps.ZONE_KALIMDOR_FELWOOD = 77
+Maps.ZONE_KALIMDOR_UNGORO_CRATER = 78
+Maps.ZONE_KALIMDOR_MOONGLADE = 80
+Maps.ZONE_KALIMDOR_SILITHUS = 81
+Maps.ZONE_KALIMDOR_WINTERSPRING = 83
+Maps.ZONE_KALIMDOR_ORGRIMMAR_ORGRIMMAR = 85
+Maps.ZONE_KALIMDOR_THUNDER_BLUFF = 88
+Maps.ZONE_KALIMDOR_DARNASSUS = 89
+Maps.ZONE_KALIMDOR_AZUREMYST_ISLE = 97
+Maps.ZONE_KALIMDOR_THE_EXODAR = 103
+Maps.ZONE_KALIMDOR_BLOODMYST_ISLE = 106
+Maps.ZONE_KALIMDOR_MOUNT_HYJAL = 198
+Maps.ZONE_KALIMDOR_SOUTHERN_BARRENS = 199
+Maps.ZONE_KALIMDOR_ULDUM = 249
+Maps.ZONE_KALIMDOR_VALLEY_OF_TRIALS = 461
+Maps.ZONE_KALIMDOR_ECHO_ISLES = 463
+Maps.ZONE_KALIMDOR_SHADOWGLEN = 460
+Maps.ZONE_KALIMDOR_CAMP_NARACHE = 462
+Maps.ZONE_KALIMDOR_AMMEN_VALE = 468
+
+addLocation(Maps.CONTINENT_KALIMDOR_ID, Maps.WORLD_AZEROTH, Maps.TYPE_CONTINENT, 'Kalimdor', {})
+
+-- Zones
+addLocation(Maps.ZONE_KALIMDOR_DUROTAR, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, 'Durotar', {})
+addLocation(Maps.ZONE_KALIMDOR_MULGORE, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, 'Mulgore', {})
+addLocation(Maps.ZONE_KALIMDOR_NORTHERN_BARRENS, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, 'Northern Barrens', {})
+addLocation(Maps.ZONE_KALIMDOR_TELDRASSIL, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Teldrassil", {})
+addLocation(Maps.ZONE_KALIMDOR_DARKSHORE, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Darkshore", {})
+addLocation(Maps.ZONE_KALIMDOR_ASHENVALE, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Ashenvale", {})
+addLocation(Maps.ZONE_KALIMDOR_THOUSAND_NEEDLES, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Thousand Needles", {})
+addLocation(Maps.ZONE_KALIMDOR_STONETALON_MOUNTAINS, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Stonetalon Mountains", {})
+addLocation(Maps.ZONE_KALIMDOR_DESOLACE, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Desolace", {})
+addLocation(Maps.ZONE_KALIMDOR_FERALAS, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Feralas", {})
+addLocation(Maps.ZONE_KALIMDOR_DUSTWALLOW_MARSH, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Dustwallow Marsh", {})
+addLocation(Maps.ZONE_KALIMDOR_TANARIS, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Tanaris", {})
+addLocation(Maps.ZONE_KALIMDOR_AZSHARA, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Azshara", {})
+addLocation(Maps.ZONE_KALIMDOR_FELWOOD, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Felwood", {})
+addLocation(Maps.ZONE_KALIMDOR_UNGORO_CRATER, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Un'Goro Crater", {})
+addLocation(Maps.ZONE_KALIMDOR_MOONGLADE, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Moonglade", {})
+addLocation(Maps.ZONE_KALIMDOR_SILITHUS, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Silithus", {})
+addLocation(Maps.ZONE_KALIMDOR_WINTERSPRING, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Winterspring", {})
+addLocation(Maps.ZONE_KALIMDOR_ORGRIMMAR_ORGRIMMAR, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Orgrimmar - Orgrimmar", {86})
+addLocation(Maps.ZONE_KALIMDOR_THUNDER_BLUFF, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Thunder Bluff", {})
+addLocation(Maps.ZONE_KALIMDOR_DARNASSUS, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Darnassus", {})
+addLocation(Maps.ZONE_KALIMDOR_AZUREMYST_ISLE, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Azuremyst Isle", {})
+addLocation(Maps.ZONE_KALIMDOR_THE_EXODAR, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "The Exodar", {})
+addLocation(Maps.ZONE_KALIMDOR_BLOODMYST_ISLE, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Bloodmyst Isle", {})
+addLocation(Maps.ZONE_KALIMDOR_MOUNT_HYJAL, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Mount Hyjal", {})
+addLocation(Maps.ZONE_KALIMDOR_SOUTHERN_BARRENS, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Southern Barrens", {})
+addLocation(Maps.ZONE_KALIMDOR_ULDUM, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ZONE, "Uldum", {})
+addLocation(Maps.ZONE_KALIMDOR_VALLEY_OF_TRIALS, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_ZONE, "Valley of Trials", {})
+addLocation(Maps.ZONE_KALIMDOR_ECHO_ISLES, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_ZONE, "Echo Isles", {})
+addLocation(Maps.ZONE_KALIMDOR_SHADOWGLEN, Maps.ZONE_KALIMDOR_TELDRASSIL, Maps.TYPE_ZONE, "Shadowglen", {})
+addLocation(Maps.ZONE_KALIMDOR_CAMP_NARACHE, Maps.ZONE_KALIMDOR_MULGORE, Maps.TYPE_ZONE, "Camp Narache", {})
+addLocation(Maps.ZONE_KALIMDOR_AMMEN_VALE, Maps.ZONE_KALIMDOR_AZUREMYST_ISLE, Maps.TYPE_ZONE, "Ammen Vale", {})
+
+
+-- Orphans
+addLocation(524, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ORPHAN, "Battle on the High Seas", {})
+addLocation(92, Maps.ZONE_KALIMDOR_NORTHERN_BARRENS, Maps.TYPE_ORPHAN, "Warsong Gulch", {})
+addLocation(219, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_ORPHAN, "Zul'Farrak", {})
+addLocation(398, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_ORPHAN, "Well of Eternity", {})
+addLocation(247, Maps.ZONE_KALIMDOR_SILITHUS, Maps.TYPE_ORPHAN, "Ruins of Ahn'Qiraj", {})
+addLocation(86, Maps.ZONE_KALIMDOR_ORGRIMMAR_ORGRIMMAR, Maps.TYPE_ORPHAN, "Orgrimmar - Cleft of Shadow", {})
+addLocation(483, Maps.ZONE_KALIMDOR_DUSTWALLOW_MARSH, Maps.TYPE_ORPHAN, "Dustwallow Marsh", {})
+addLocation(277, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_ORPHAN, "Lost City of the Tol'vir", {})
+addLocation(697, Maps.ZONE_KALIMDOR_AZSHARA, Maps.TYPE_ORPHAN, "Azshara", {})
+addLocation(273, 75, Maps.TYPE_ORPHAN, "The Black Morass - Caverns of Time", {})
+addLocation(274, 75, Maps.TYPE_ORPHAN, "Old Hillsbrad Foothills - Caverns of Time", {})
+addLocation(904, Maps.ZONE_KALIMDOR_SILITHUS, Maps.TYPE_ORPHAN, "Silithus Brawl - Silithus", {})
+addLocation(907, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ORPHAN, "Seething Shore", {})
+addLocation(859, Maps.ZONE_KALIMDOR_NORTHERN_BARRENS, Maps.TYPE_ORPHAN, "Warsong Gulch", {})
+addLocation(416, Maps.ZONE_KALIMDOR_DUSTWALLOW_MARSH, Maps.TYPE_ORPHAN, "Dustwallow Marsh", {})
+addLocation(327, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ORPHAN, "Ahn'Qiraj: The Fallen Kingdom", {})
+addLocation(338, Maps.ZONE_KALIMDOR_MOUNT_HYJAL, Maps.TYPE_ORPHAN, "Molten Front ", {})
+addLocation(775, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ORPHAN, "The Exodar", {})
+addLocation(776, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_ORPHAN, "Azuremyst Isle", {})
+addLocation(760, Maps.ZONE_KALIMDOR_MOUNT_HYJAL, Maps.TYPE_ORPHAN, "Malorne's Nightmare", {})
+addLocation(738, Maps.ZONE_KALIMDOR_MOUNT_HYJAL, Maps.TYPE_ORPHAN, "Firelands", {})
+
+
+-- Kalimdor
+addLocation(891, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_DUNGEON, "Azuremyst Isle - Azuremyst Isle", {892, 893, 894})
+addLocation(892, 891, Maps.TYPE_DUNGEON, "Azuremyst Isle - Floor 1", {})
+addLocation(893, 891, Maps.TYPE_DUNGEON, "Azuremyst Isle - Floor 2", {})
+addLocation(894, 891, Maps.TYPE_DUNGEON, "Azuremyst Isle - Floor 3", {})
+
+addLocation(782, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_DUNGEON, "The Emerald Nightmare - Ashenvale", {})
+addLocation(785, Maps.CONTINENT_KALIMDOR_ID, Maps.TYPE_DUNGEON, "The Emerald Nightmare - Feralas", {})
+
+
+-- Orgrimmar
+addLocation(522, Maps.ZONE_KALIMDOR_ORGRIMMAR_ORGRIMMAR, Maps.TYPE_DUNGEON, "The Secrets of Ragefire", {})
+addLocation(503, Maps.ZONE_KALIMDOR_ORGRIMMAR_ORGRIMMAR, Maps.TYPE_DUNGEON, "Brawl'gar Arena", {})
+addLocation(213, Maps.ZONE_KALIMDOR_ORGRIMMAR_ORGRIMMAR, Maps.TYPE_DUNGEON, "Ragefire Chasm", {})
+
+
+-- Durotar
+addLocation(2, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_MICRO, 'BurningBladeCoven', {})
+addLocation(3, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_MICRO, 'Tiragarde Keep', {})
+addLocation(4, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_MICRO, 'Tiragarde Keep - Great Hall', {})
+addLocation(5, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_MICRO, 'SkullRock', {})
+addLocation(6, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_MICRO, 'Dustwind Cave', {})
+addLocation(464, Maps.ZONE_KALIMDOR_DUROTAR, Maps.TYPE_MICRO, "Spitescale Cavern", {})
+
+
+-- Dustwind Marsh
+addLocation(248, Maps.ZONE_KALIMDOR_DUSTWALLOW_MARSH, Maps.TYPE_DUNGEON, "Onyxia's Lair", {})
+
+
+-- Mulgore
+addLocation(8, Maps.ZONE_KALIMDOR_MULGORE, Maps.TYPE_MICRO, "PalemaneRock", {})
+addLocation(9, Maps.ZONE_KALIMDOR_MULGORE, Maps.TYPE_MICRO, "TheVenture Co. Mine", {})
+
+
+-- Northern Barrens
+addLocation(11, Maps.ZONE_KALIMDOR_NORTHERN_BARRENS, Maps.TYPE_MICRO, 'Wailing Caverns', {})
+addLocation(279, Maps.ZONE_KALIMDOR_NORTHERN_BARRENS, Maps.TYPE_DUNGEON, "Wailing Caverns ", {})
+addLocation(825, Maps.ZONE_KALIMDOR_NORTHERN_BARRENS, Maps.TYPE_DUNGEON, "Wailing Cavernss", {})
+
+
+-- Southern Barrens
+addLocation(301, Maps.ZONE_KALIMDOR_SOUTHERN_BARRENS, Maps.TYPE_DUNGEON, "Razorfen Kraul - Southern Barrens", {})
+
+
+-- Thousand Needles
+addLocation(300, Maps.ZONE_KALIMDOR_THOUSAND_NEEDLES, Maps.TYPE_DUNGEON, "Razorfen Downs - Thousand Needles", {})
+
+
+-- Teldrassil
+addLocation(58, Maps.ZONE_KALIMDOR_TELDRASSIL, Maps.TYPE_MICRO, "Shadowthread Cave", {})
+addLocation(59, Maps.ZONE_KALIMDOR_TELDRASSIL, Maps.TYPE_MICRO, "Fel Rock", {})
+addLocation(60, Maps.ZONE_KALIMDOR_TELDRASSIL, Maps.TYPE_MICRO, "Ban'ethil Barrow Den - Upper Den", {})
+addLocation(61, Maps.ZONE_KALIMDOR_TELDRASSIL, Maps.TYPE_MICRO, "Ban'ethil Barrow Den - Lower Den", {})
+
+
+-- Desolace
+addLocation(67, Maps.ZONE_KALIMDOR_DESOLACE, Maps.TYPE_MICRO, "Maraudon - The Wicked Grotto", {})
+addLocation(68, Maps.ZONE_KALIMDOR_DESOLACE, Maps.TYPE_MICRO, "Maraudon - Foulspore Cavern", {})
+
+addLocation(280, Maps.ZONE_KALIMDOR_DESOLACE, Maps.TYPE_DUNGEON, "Maraudon - Caverns of Maraudon", {})
+addLocation(281, Maps.ZONE_KALIMDOR_DESOLACE, Maps.TYPE_DUNGEON, "Maraudon - Zaetar's Grave", {})
+
+
+-- Tanaris
+addLocation(72, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_MICRO, "The Noxious Lair", {})
+addLocation(73, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_MICRO, "The Gaping Chasm", {})
+addLocation(74, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_MICRO, "Caverns of Time - Timeless Tunnel", {})
+addLocation(75, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_MICRO, "Caverns of Time - Caverns of Time", {})
+addLocation(329, 75, Maps.TYPE_ORPHAN, "Hyjal Summit", {})
+
+addLocation(130, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_DUNGEON, "The Culling of Stratholme - The Culling of Stratholme", {})
+addLocation(131, 130, Maps.TYPE_DUNGEON, "The Culling of Stratholme - Stratholme City ", {})
+
+
+addLocation(399, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_DUNGEON, "Hour of Twilight - Hour of Twilight", {})
+addLocation(400, 399, Maps.TYPE_DUNGEON, "Hour of Twilight - Wyrmrest Temple", {})
+
+addLocation(401, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_DUNGEON, "End Time - End Time", {})
+addLocation(402, 401, Maps.TYPE_DUNGEON, "End Time - Azure Dragonshrine", {})
+addLocation(403, 401, Maps.TYPE_DUNGEON, "End Time - Ruby Dragonshrine", {})
+addLocation(404, 401, Maps.TYPE_DUNGEON, "End Time - Obsidian Dragonshrine", {})
+addLocation(405, 401, Maps.TYPE_DUNGEON, "End Time - Emerald Dragonshrine", {})
+addLocation(406, 401, Maps.TYPE_DUNGEON, "End Time - Bronze Dragonshrine", {})
+
+addLocation(409, Maps.ZONE_KALIMDOR_TANARIS, Maps.TYPE_DUNGEON, "Dragon Soul - Dragon Soul", {})
+addLocation(410, 409, Maps.TYPE_DUNGEON, "Dragon Soul - Maw of Go'rath", {})
+addLocation(411, 409, Maps.TYPE_DUNGEON, "Dragon Soul - Maw of Shu'ma", {})
+addLocation(412, 409, Maps.TYPE_DUNGEON, "Dragon Soul - Eye of Eternity", {})
+addLocation(413, 409, Maps.TYPE_DUNGEON, "Dragon Soul - Skyfire Airship", {})
+addLocation(414, 409, Maps.TYPE_DUNGEON, "Dragon Soul - Spine of Deathwing", {})
+addLocation(415, 409, Maps.TYPE_DUNGEON, "Dragon Soul - The Maelstrom", {})
+
+
+-- Un'Goro Crater
+addLocation(79, Maps.ZONE_KALIMDOR_UNGORO_CRATER, Maps.TYPE_MICRO, "The Slithering Scar", {})
+
+
+-- Silithus
+addLocation(82, Maps.ZONE_KALIMDOR_SILITHUS, Maps.TYPE_MICRO, "Twilight's Run", {})
+addLocation(319, Maps.ZONE_KALIMDOR_SILITHUS, Maps.TYPE_DUNGEON, "Ahn'Qiraj - The Hive Undergrounds", {})
+addLocation(320, Maps.ZONE_KALIMDOR_SILITHUS, Maps.TYPE_DUNGEON, "Ahn'Qiraj - The Temple Gates", {})
+addLocation(321, Maps.ZONE_KALIMDOR_SILITHUS, Maps.TYPE_DUNGEON, "Ahn'Qiraj - Vault of C'Thun", {})
+
+
+-- Azuremyst Isle
+addLocation(98, Maps.ZONE_KALIMDOR_AZUREMYST_ISLE, Maps.TYPE_MICRO, "Tides' Hollow", {})
+addLocation(99, Maps.ZONE_KALIMDOR_AZUREMYST_ISLE, Maps.TYPE_MICRO, "Stillpine Hold", {})
+
+
+-- Ashenvale
+addLocation(221, Maps.ZONE_KALIMDOR_ASHENVALE, Maps.TYPE_DUNGEON, "Blackfathom Deeps - The Pool of Ask'Ar", {})
+addLocation(222, Maps.ZONE_KALIMDOR_ASHENVALE, Maps.TYPE_DUNGEON, "Blackfathom Deeps - Moonshrine Sanctum", {})
+addLocation(223, Maps.ZONE_KALIMDOR_ASHENVALE, Maps.TYPE_DUNGEON, "Blackfathom Deeps - The Forgotten Pool", {})
+
+
+-- Feralas
+addLocation(234, Maps.ZONE_KALIMDOR_FERALAS, Maps.TYPE_ORPHAN, "Dire Maul", {235, 236, 237, 238, 239, 240})
+addLocation(235, Maps.ZONE_KALIMDOR_FERALAS, Maps.TYPE_DUNGEON, "Dire Maul - Gordok Commons", {})
+addLocation(236, Maps.ZONE_KALIMDOR_FERALAS, Maps.TYPE_DUNGEON, "Dire Maul - Capital Gardens", {})
+addLocation(237, Maps.ZONE_KALIMDOR_FERALAS, Maps.TYPE_DUNGEON, "Dire Maul - Court of the Highborne", {})
+addLocation(238, Maps.ZONE_KALIMDOR_FERALAS, Maps.TYPE_DUNGEON, "Dire Maul - Prison of Immol'Thar", {})
+addLocation(239, Maps.ZONE_KALIMDOR_FERALAS, Maps.TYPE_DUNGEON, "Dire Maul - Warpwood Quarter", {})
+addLocation(240, Maps.ZONE_KALIMDOR_FERALAS, Maps.TYPE_DUNGEON, "Dire Maul - The Shrine of Eldretharr", {})
+
+
+-- Mount Hyjal
+addLocation(367, Maps.ZONE_KALIMDOR_MOUNT_HYJAL, Maps.TYPE_DUNGEON, "Firelands - Firelands", {})
+addLocation(368, 367, Maps.TYPE_DUNGEON, "Firelands - The Anvil of Conflagration", {})
+addLocation(369, 367, Maps.TYPE_DUNGEON, "Firelands - Sulfuron Keep", {})
+
+
+-- Uldum
+addLocation(297, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "Halls of Origination - The Vault of Lights", {})
+addLocation(298, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "Halls of Origination - Tomb of the Earthrager", {})
+addLocation(299, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "Halls of Origination - The Four Seats", {})
+addLocation(857, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "Throne of the Four Winds", {})
+addLocation(325, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "The Vortex Pinnacle", {})
+addLocation(328, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "Throne of the Four Winds", {})
+addLocation(716, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "Skywall", {})
+addLocation(737, Maps.ZONE_KALIMDOR_ULDUM, Maps.TYPE_DUNGEON, "The Vortex Pinnacle", {})

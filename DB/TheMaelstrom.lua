@@ -3,3 +3,41 @@
 --- Created by warfacez.
 --- DateTime: 26.10.20 12:25
 ---
+---
+---
+Maps.ZONE_THE_MAELSTROM_THE_MAELSTROM = 276
+Maps.ZONE_THE_MAELSTROM_THE_LOST_ISLES = 174
+Maps.ZONE_THE_MAELSTROM_KEZAN = 194
+Maps.ZONE_THE_MAELSTROM_DEEPHOLM = 207
+
+
+addLocation(Maps.CONTINENT_THE_MAELSTROM, Maps.WORLD_AZEROTH, Maps.TYPE_CONTINENT, "The Maelstrom", {})
+
+-- Zones
+addLocation(Maps.ZONE_THE_MAELSTROM_THE_MAELSTROM, Maps.CONTINENT_THE_MAELSTROM, Maps.TYPE_ZONE, "The Maelstrom", {})
+addLocation(Maps.ZONE_THE_MAELSTROM_THE_LOST_ISLES, Maps.CONTINENT_THE_MAELSTROM, Maps.TYPE_ZONE, "The Lost Isles", {})
+addLocation(Maps.ZONE_THE_MAELSTROM_KEZAN, Maps.CONTINENT_THE_MAELSTROM, Maps.TYPE_ZONE, "Kezan", {})
+addLocation(Maps.ZONE_THE_MAELSTROM_DEEPHOLM, Maps.CONTINENT_THE_MAELSTROM, Maps.TYPE_ZONE, "Deepholm", {})
+
+
+-- The Maelstrom
+addLocation(839, Maps.CONTINENT_THE_MAELSTROM, Maps.TYPE_DUNGEON, "The Maelstrom - The Maelstrom", {})
+addLocation(725, Maps.CONTINENT_THE_MAELSTROM, Maps.TYPE_ORPHAN, "The Maelstrom", {})
+
+
+-- The Lost Isles
+addLocation(175, Maps.ZONE_THE_MAELSTROM_THE_LOST_ISLES, Maps.TYPE_MICRO, "Kaja'mite Cavern", {})
+addLocation(176, Maps.ZONE_THE_MAELSTROM_THE_LOST_ISLES, Maps.TYPE_MICRO, "Volcanoth's Lair", {})
+addLocation(177, Maps.ZONE_THE_MAELSTROM_THE_LOST_ISLES, Maps.TYPE_MICRO, "Gallywix Labor Mine - Mine Tunnels", {})
+addLocation(178, Maps.ZONE_THE_MAELSTROM_THE_LOST_ISLES, Maps.TYPE_MICRO, "Gallywix Labor Mine - Mine Shaft", {})
+
+-- Kezan
+addLocation(195, Maps.ZONE_THE_MAELSTROM_KEZAN, Maps.TYPE_MICRO, "Kaja'mine", {})
+addLocation(196, Maps.ZONE_THE_MAELSTROM_KEZAN, Maps.TYPE_MICRO, "Kaja'mine", {})
+addLocation(197, Maps.ZONE_THE_MAELSTROM_KEZAN, Maps.TYPE_MICRO, "Kaja'mine", {})
+
+-- Deepholm
+addLocation(208, Maps.ZONE_THE_MAELSTROM_DEEPHOLM, Maps.TYPE_MICRO, "Twilight Depths - Floor 1 - Deepholm", {})
+addLocation(209, Maps.ZONE_THE_MAELSTROM_DEEPHOLM, Maps.TYPE_MICRO, "Twilight Depths - Floor 2 - Deepholm", {})
+addLocation(729, Maps.ZONE_THE_MAELSTROM_DEEPHOLM, Maps.TYPE_MICRO, "Crumbling Depths", {})
+addLocation(324, Maps.ZONE_THE_MAELSTROM_DEEPHOLM, Maps.TYPE_DUNGEON, "The Stonecore", {})
